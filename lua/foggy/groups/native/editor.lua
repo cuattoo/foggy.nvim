@@ -11,16 +11,16 @@ else
 end
 
 local groups = {
-    Comment = { fg = C.comment, italic = O.italic_comments },                 -- any comment
-    ColorColumn = { bg = C.bg_visual },                                       -- used for the columns set with 'colorcolumn'
-    Conceal = { fg = C.gray.g3 },                                             -- placeholder characters substituted for concealed text (see 'conceallevel')
+    Comment = { fg = C.comment, italic = O.italic_comments },                                                  -- any comment
+    ColorColumn = { bg = C.bg_visual },                                                                        -- used for the columns set with 'colorcolumn'
+    Conceal = { fg = C.gray.g3 },                                                                              -- placeholder characters substituted for concealed text (see 'conceallevel')
 
-    Cursor = { fg = C.bg, bg = C.fg },                                        -- character under the cursor
-    lCursor = { fg = C.bg },                                                  -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-    CursorIM = { fg = C.fg },                                                 -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn = CursorColumn,                                              -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine = { bg = C.xterm.grey, bold = O.cursorline.bold },             -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-    CursorLineNr = { fg = C.fg_hightlight, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    Cursor = { fg = C.bg, bg = C.fg },                                                                         -- character under the cursor
+    lCursor = { fg = C.bg },                                                                                   -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+    CursorIM = { fg = C.fg },                                                                                  -- like Cursor, but used when in IME mode |CursorIM|
+    CursorColumn = { bg = U.blend(C.gray.g1, C.white.default, O.cursorline.blend), bold = O.cursorline.bold }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine = { bg = C.xterm.grey, bold = O.cursorline.bold },                                              -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLineNr = { fg = C.fg_hightlight, bold = O.cursorline.bold_number },                                  -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
 
     Directory = { fg = C.fg_hightlight }, -- directory names (and other special names in listings)
