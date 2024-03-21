@@ -5,7 +5,7 @@ local defaults = {
     on_palette = function(palette)
         return palette
     end,
-    theme = 'foggy',
+    theme = 'dark',
     -- Enable bold keywords.
     bold_keywords = false,
     -- Enable italic comments.
