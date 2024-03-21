@@ -18,6 +18,7 @@ function C.extend_palette()
         C.black.b1 = C.gray.g0
     end
 
+
     -- Diffs
     C.diff = {
         change0 = U.blend(C.white.default, C.bg, 0.05),

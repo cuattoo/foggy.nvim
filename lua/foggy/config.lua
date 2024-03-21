@@ -12,7 +12,7 @@ local defaults = {
     italic_comments = true,
 
     -- Enable general editor background transparency.
-    transparent_bg = false,
+    transparent_bg = true,
 
     bg_hightlight = true,
     -- Enable brighter float border.
