@@ -10,8 +10,9 @@ local defaults = {
     bold_keywords = false,
     -- Enable italic comments.
     italic_comments = true,
+
     -- Enable general editor background transparency.
-    transparent_bg = true,
+    transparent_bg = false,
 
     bg_hightlight = true,
     -- Enable brighter float border.
