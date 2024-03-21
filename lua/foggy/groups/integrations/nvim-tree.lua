@@ -1,12 +1,6 @@
 local C = require 'foggy.colors'
 local O = require('foggy.config').options
 
-if O.theme == "foggy" then
-    NvimTreeIndentMarker = { fg = C.gray.foggy, bg = C.none }
-else
-    NvimTreeIndentMarker = { fg = C.gray.g1, bg = C.none }
-end
-
 return {
 
     NvimTreeNormal = { fg = C.fg, bg = C.bg },

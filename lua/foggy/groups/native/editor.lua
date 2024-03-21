@@ -51,7 +51,7 @@ local groups = {
     MsgArea = { fg = C.fg },                                       -- Area for messages and cmdline
     -- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = C.blue.b1 },                                  -- |more-prompt|
-    NonText = { fg = C.gray4 },                                    -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText = { fg = C.gray.g4 },                                  -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 
     Normal = { fg = C.fg, bg = C.bg },                             -- normal text
     NormalNC = { fg = C.fg, bg = C.bg },                           -- normal text in non-current windows
@@ -61,19 +61,19 @@ local groups = {
     FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border },
     FloatTitle = { fg = C.yellow.base },
 
-    Pmenu = { bg = C.bg_popup },                                                     -- Popup menu: normal item.
-    PmenuSel = { bg = C.bg_selected },                                               -- Popup menu: selected item.
-    PmenuSbar = { bg = C.gray2 },                                                    -- Popup menu: scrollbar.
-    PmenuThumb = { bg = C.gray2, fg = C.gray2 },                                     -- Popup menu: Thumb of the scrollbar.
+    Pmenu = { bg = C.bg_popup },                                                       -- Popup menu: normal item.
+    PmenuSel = { bg = C.bg_selected },                                                 -- Popup menu: selected item.
+    PmenuSbar = { bg = C.gray.g2 },                                                    -- Popup menu: scrollbar.
+    PmenuThumb = { bg = C.gray.g2, fg = C.gray.g2 },                                   -- Popup menu: Thumb of the scrollbar.
 
-    Question = { fg = C.info },                                                      -- |hit-enter| prompt and yes/no questions
-    QuickFixLine = { bg = C.bg_visual, bold = true },                                -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    Question = { fg = C.info },                                                        -- |hit-enter| prompt and yes/no questions
+    QuickFixLine = { bg = C.bg_visual, bold = true },                                  -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 
-    Search = { bg = C.black1, fg = C.yellow.bright, bold = true, underline = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch = { bg = C.yellow.base, fg = C.black0, bold = true },                  -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    Search = { bg = C.black.b1, fg = C.yellow.bright, bold = true, underline = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+    IncSearch = { bg = C.yellow.base, fg = C.black.b0, bold = true },                  -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch = { link = 'IncSearch' },
 
-    SpecialKey = { fg = C.gray5 },                            -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
+    SpecialKey = { fg = C.gray.g5 },                          -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
 
     SpellBad = { sp = C.error, undercurl = true },            -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap = { sp = C.warning, undercurl = true },          -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -81,11 +81,11 @@ local groups = {
     SpellRare = { sp = C.hint, undercurl = true },            -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
 
     StatusLine = { fg = C.fg_sidebar, bg = C.bg_statusline }, -- status line of current window
-    StatusLineNC = { fg = C.gray4, bg = C.bg_statusline },    -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLineNC = { fg = C.gray.g4, bg = C.bg_statusline },  -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 
     TabLine = { bg = C.bg_statusline, fg = C.fg },            -- tab pages line, not active tab page label
-    TabLineFill = { bg = C.black0, fg = C.none },             -- tab pages line, where there are no labels
-    TabLineSel = { fg = C.fg_bright, bg = C.gray0 },          -- tab pages line, active tab page label
+    TabLineFill = { bg = C.black.b0, fg = C.none },           -- tab pages line, where there are no labels
+    TabLineSel = { fg = C.fg_bright, bg = C.gray.g0 },        -- tab pages line, active tab page label
 
     Title = { fg = C.fg_bright, bold = true },                -- titles for output from ":set all", ":autocmd" etc.
 

@@ -14,7 +14,7 @@ function C.extend_palette()
 
     -- Swap background
     if O.swap_backgrounds then
-        C.gray.g0 = C.black1
+        C.gray.g0 = C.black.b1
         C.black.b1 = C.gray.g0
     end
 

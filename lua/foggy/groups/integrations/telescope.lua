@@ -44,7 +44,7 @@ if O.telescope.style == 'flat' then
     groups.TelescopePromptTitle = { bg = C.orange.base, fg = C.black.b0, bold = true }
     groups.TelescopeTitle = { bg = C.orange.base, fg = C.black.b0, bold = true }
 
-    groups.TelescopeBorder = { fg = C.black0, bg = C.black.b0 }
+    groups.TelescopeBorder = { fg = C.black.b0, bg = C.black.b0 }
     groups.TelescopePromptBorder = { bg = C.black.b2, fg = C.black.b0 }
     groups.TelescopeResultsBorder = { bg = C.black.b1, fg = C.black.b0 }
     groups.TelescopePreviewBorder = { bg = C.black.b1, fg = C.black.b0 }
