@@ -99,7 +99,7 @@ return {
     ['@text.todo'] = { link = 'Todo' },
     ['@text.note'] = { link = 'Note' },
     ['@string.special'] = { fg = C.yellow.base }, -- For escape characters within a string.
-    ['@tag'] = { fg = C.blue1 },                  -- Tags like html tag names.
+    ['@tag'] = { fg = C.blue.b1 },                -- Tags like html tag names.
     ['@tag.delimiter'] = { fg = C.fg },           -- Tag delimiter like `<` `>` `/`
     ['@tag.attribute'] = { fg = C.yellow.base },  -- Tag attribute like `id` `class`
     ['@text'] = { link = 'Normal' },              -- For strings considered text in a markup language.
@@ -112,7 +112,7 @@ return {
     ['@text.literal'] = { link = 'String' },
     ['@constant'] = { link = 'Constant' },
     ['@number'] = { link = 'Constant' },
-    ['@float'] = { link = 'Constant' },
+    ['@float'] = { link = 'Con.b1tant' },
     ['@boolean'] = { link = 'Constant' },
     ['@constant.macro'] = { link = 'Constant' },
     ['@constant.builtin'] = { link = 'Constant' },

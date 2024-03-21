@@ -43,7 +43,7 @@ function C.extend_palette()
     if O.theme == "foggy" then
         C.bg = (O.transparent_bg and C.none) or C.gray.foggy
         C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe
-        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
+        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.blue.b2, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
         C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
         C.bg_popup = (O.transparent_bg and C.none) or C.bg
@@ -73,7 +73,7 @@ function C.extend_palette()
         -- Backgrounds
         C.bg = (O.transparent_bg and C.none) or C.gray.g1
         C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
-        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.blue2, O.cursorline.blend)
+        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.blue.b2, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
         C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
         C.bg_popup = (O.transparent_bg and C.none) or C.bg
