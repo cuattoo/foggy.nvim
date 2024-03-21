@@ -16,7 +16,7 @@ end
 load(config)
 
 config.on_palette = function(palette)
-    palette.black0 = '#000000'
+    palette.black.b0 = '#000000'
     return palette
 end
 

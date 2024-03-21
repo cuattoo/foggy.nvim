@@ -66,7 +66,7 @@ function C.extend_palette()
         C.fg_float = C.fg
         C.bg_float_border = C.bg_float
         C.fg_float_border = C.border_fg
-    else
+    elseif O.theme == nil or O.theme == "dark" then
         -- Define some use cases.
         -- Some of the format is from @folke/tokyonight.nvim.
 

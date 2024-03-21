@@ -28,5 +28,5 @@ return {
     -- DiagnosticSignOk = {},
 
     DiagnosticDeprecated = { 'DiagnosticUnderlineError' },
-    DiagnosticUnnecessary = { fg = C.black0 },
+    DiagnosticUnnecessary = { fg = C.black.b0 },
 }
