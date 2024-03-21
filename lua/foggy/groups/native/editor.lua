@@ -4,12 +4,6 @@ local C = require 'foggy.colors'
 local O = require('foggy.config').options
 local U = require('foggy.utils')
 
-if O.theme == "foggy" then
-    CursorColumn = { bg = U.blend(C.base.bg, C.xterm.grey, O.cursorline.blend), bold = O.cursorline.bold }    -- Screen-column at the cursor, when 'cursorcolumn' is set.
-else
-    CursorColumn = { bg = U.blend(C.gray.g1, C.white.default, O.cursorline.blend), bold = O.cursorline.bold } -- Screen-column at the cursor, when 'cursorcolumn' is set.
-end
-
 local groups = {
     Comment = { fg = C.comment, italic = O.italic_comments },                                                  -- any comment
     ColorColumn = { bg = C.bg_visual },                                                                        -- used for the columns set with 'colorcolumn'
