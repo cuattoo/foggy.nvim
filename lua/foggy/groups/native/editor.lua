@@ -93,11 +93,11 @@ local groups = {
     VisualNOS = { bg = C.bg_visual },                         -- Visual mode selection when vim is "Not Owning the Selection".
 
     WarningMsg = { fg = C.warning },                          -- warning messages
-    Whitespace = { fg = C.gray4 },                            -- "nbsp", "space", "tab" and "trail" in 'listchars'
+    Whitespace = { fg = C.gray.g4 },                          -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { bg = C.bg_visual },                          -- current match in 'wildmenu' completion
 
-    WinBar = { bg = C.bg_dark, fg = C.gray5 },
-    WinBarNC = { bg = C.bg_dark, fg = C.gray4 },
+    WinBar = { bg = C.bg_dark, fg = C.gray.g5 },
+    WinBarNC = { bg = C.bg_dark, fg = C.gray.g4 },
 }
 
 return groups
