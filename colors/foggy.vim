@@ -1,1 +1,1 @@
-lua require 'arcdic' .load()
+lua require 'foggy' .load()

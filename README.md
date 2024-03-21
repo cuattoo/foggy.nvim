@@ -1,4 +1,4 @@
-# arcdic.nvim
+# foggy.nvim
 
 A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but in lighter colors. The idea behind this colorscheme is to use Nord, but add some lighter colors and use Aurora more prominently than Nord themes usually do. This ends up creating a colorscheme that is soft on the eyes in the light.
 
@@ -16,11 +16,11 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-    'cuattoo/arcdic.nvim',
+    'cuattoo/foggy.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-        require 'arcdic' .load()
+        require 'foggy' .load()
     end
 }
 ```
@@ -28,7 +28,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 With [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'cuattoo/arcdic.nvim', { 'branch': 'main' }
+Plug 'cuattoo/foggy.nvim', { 'branch': 'main' }
 ```
 
 # 🚀 Usage
@@ -36,15 +36,15 @@ Plug 'cuattoo/arcdic.nvim', { 'branch': 'main' }
 Using vim:
 
 ```vim
-colorscheme arcdic
+colorscheme foggy
 ```
 
 Using lua:
 
 ```lua
-vim.cmd.colorscheme 'arcdic'
+vim.cmd.colorscheme 'foggy'
 -- or
-require 'arcdic' .load()
+require 'foggy' .load()
 ```
 
 Using with lualine:
@@ -52,7 +52,7 @@ Using with lualine:
 ```lua
 require 'lualine' .setup {
     options = {
-        theme = 'arcdic'
+        theme = 'foggy'
     }
 }
 ```
@@ -60,15 +60,15 @@ require 'lualine' .setup {
 To get the palette in lua:
 
 ```lua
-local palette = require 'arcdic.colors'
+local palette = require 'foggy.colors'
 ```
 
 # ⚙️ Configuration
 
-Arcdic will use the default values, unless `setup` is called. Below is the default configuration.
+Foggy will use the default values, unless `setup` is called. Below is the default configuration.
 
 ```lua
-require 'arcrdic' .setup {
+require 'foggy' .setup {
     -- This callback can be used to override the colors used in the palette.
     on_palette = function(palette) return palette end,
 
@@ -121,8 +121,8 @@ require 'arcrdic' .setup {
 An example of overriding the `TelescopePromptTitle` colors:
 
 ```lua
-local palette = require 'arcdic.colors'
-require 'arcdic' .setup {
+local palette = require 'foggy.colors'
+require 'foggy' .setup {
     override = {
         TelescopePromptTitle = {
             fg = palette.red.bright,
