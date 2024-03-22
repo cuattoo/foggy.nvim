@@ -4,7 +4,7 @@ local C = require 'foggy.colors.foggy'
 
 C.extended = false
 
-function C.extend_palette()
+function C.extend_palette(style)
     C.extended = true
 
     -- Modify the palette before generating colors.
@@ -17,6 +17,7 @@ function C.extend_palette()
         C.gray.g0 = C.black.b1
         C.black.b1 = C.gray.g0
     end
+
 
     -- Define some use cases.
     -- Some of the format is from @folke/tokyonight.nvim.
@@ -81,7 +82,7 @@ function C.extend_palette()
     C.warning = C.warn
     C.hint = C.green.bright
     C.info = C.blue.b2
-    if O.theme == "foggy" then
+    if style == "foggy" then
         C.bg = (O.transparent_bg and C.none) or C.gray.foggy
         C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe
         C.bg_highlight = (O.transparent_bg and C.xterm.grey) or
