@@ -73,9 +73,9 @@ local palette = {
     yellow = {
         base = '#EBCB8B',
         bright = '#EFD49F',
-        enigma = '#D1be9E', --added
+        enigma = '#D1be9E', -- added
         dim = '#E7C173',
-        dark = '#23231F',
+        dark = '#23231F',   -- added
     },
     green = {
         base = '#A3BE8C',
