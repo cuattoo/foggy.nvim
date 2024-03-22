@@ -15,6 +15,9 @@ function M.load(opts)
 
     -- Apply theme
     require('foggy.colors').extend_palette()
+    if C.theme == "foggy" then
+        vim.api.nvim_err_write("foggy is the theme")
+    end
     U.highlight(G.get_groups())
     --G.set_term_colors()
 end
