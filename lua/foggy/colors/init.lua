@@ -23,7 +23,7 @@ function C.extend_palette()
 
     -- Backgrounds
     C.bg = C.yellow.dark
-    if O.transparent_bg then
+    if O.transparent_bg == true then
         bg = C.none
     end
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
