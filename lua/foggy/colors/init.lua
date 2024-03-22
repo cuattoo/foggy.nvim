@@ -81,7 +81,7 @@ function C.extend_palette()
     C.warning = C.warn
     C.hint = C.green.bright
     C.info = C.blue.b2
-    if O.theme == nil then
+    if O.theme == "foggy" then
         C.bg = (O.transparent_bg and C.none) or C.gray.foggy
         C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe
         C.bg_highlight = (O.transparent_bg and C.xterm.grey) or
