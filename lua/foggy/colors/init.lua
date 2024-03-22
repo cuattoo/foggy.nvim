@@ -22,7 +22,7 @@ function C.extend_palette()
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = (O.transparent_bg and C.none) or C.gray.g1
+    C.bg = (O.transparent_bg and C.none) or C.gray.g3
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
     C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
@@ -33,8 +33,7 @@ function C.extend_palette()
     C.bg_fold = C.gray.g2
 
     -- Borders
-    C.border_fg = (O.transparent_bg and not O.bright_border and C.gray.foggy) or
-        (O.bright_border and C.fg_hightlight) or
+    C.border_fg = (O.transparent_bg and not O.bright_border and C.gray.foggy) or (O.bright_border and C.fg_hightlight) or
         C.gray.g3
     C.border_bg = (O.transparent_bg and C.none) or C.bg
 
