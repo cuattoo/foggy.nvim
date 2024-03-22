@@ -1,6 +1,7 @@
 -- Notes and format from folke/tokyonight.nvim @GutHub.
 
 local C = require 'foggy.colors'
+vim.print(C.bg)
 
 return {
     DiffAdd = { bg = C.diff.add, bold = true },       -- diff mode: Added line |diff.txt|
