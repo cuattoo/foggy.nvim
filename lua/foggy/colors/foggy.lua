@@ -75,6 +75,7 @@ local palette = {
         bright = '#EFD49F',
         enigma = '#D1be9E', --added
         dim = '#E7C173',
+        dark = '#23231F',
     },
     green = {
         base = '#A3BE8C',

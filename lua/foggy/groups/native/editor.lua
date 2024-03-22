@@ -47,7 +47,7 @@ local groups = {
     MoreMsg = { fg = C.blue.b1 },                                  -- |more-prompt|
     NonText = { fg = C.gray.g4 },                                  -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 
-    Normal = { fg = C.fg, bg = C.gray.g1 },                        -- normal text
+    Normal = { fg = C.fg, bg = C.bg },                             -- normal text
     NormalNC = { fg = C.fg, bg = C.bg },                           -- normal text in non-current windows
     NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar },           -- normal text in sidebar
 

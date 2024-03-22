@@ -22,7 +22,10 @@ function C.extend_palette()
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = (O.transparent_bg and C.none) or C.gray.g3
+    C.bg = C.yellow.dark
+    if O.transparent_bg then
+        bg = C.none
+    end
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
     C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
