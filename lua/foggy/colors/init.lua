@@ -25,7 +25,7 @@ function C.extend_palette(style)
     -- Backgrounds
     C.bg = C.yellow.dark
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
-    C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
+    C.bg_highlight = U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
@@ -55,7 +55,7 @@ function C.extend_palette(style)
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
-    C.bg_float = (C.bg and C.gray.foggy) or C.white.default
+    C.bg_float = U.blend(C.fg, C.bg, 0.5)
     C.fg_float = C.fg
     C.bg_float_border = C.bg_float
     C.fg_float_border = C.border_fg
@@ -82,6 +82,15 @@ function C.extend_palette(style)
     C.warning = C.warn
     C.hint = C.green.bright
     C.info = C.blue.b2
+
+    if O.transparent_bg then
+        C.bg = C.none
+        C.bg_dark = C.none
+        C.bg_highlight = U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
+    end
+
+
+
     if style == "foggy" then
         C.bg = (O.transparent_bg and C.none) or C.gray.foggy
         C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe

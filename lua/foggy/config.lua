@@ -5,7 +5,15 @@ local defaults = {
     on_palette = function(palette)
         return palette
     end,
-    theme = nil,
+
+    -- Override terminal bg
+    terminal = {
+        terminal = "kitty",
+        bg = false,
+    },
+
+    -- Available styles dark, lighter, foggy
+    theme = "dark",
 
     -- Enable bold keywords.
     bold_keywords = false,
