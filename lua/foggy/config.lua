@@ -5,6 +5,7 @@ local defaults = {
     on_palette = function(palette)
         return palette
     end,
+    theme = nil,
 
     -- Enable bold keywords.
     bold_keywords = false,
