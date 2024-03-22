@@ -82,7 +82,7 @@ function C.extend_palette()
     C.hint = C.green.bright
     C.info = C.blue.b2
     if O.theme == "foggy" then
-        C.bg = C.yellow.dark
+        C.bg = (O.transparent_bg and C.none) or C.gray.foggy
         C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe
         C.bg_highlight = (O.transparent_bg and C.xterm.grey) or
             U.blend(C.magenta.bright, C.xterm.grey, O.cursorline.blend)
