@@ -23,9 +23,6 @@ function C.extend_palette()
 
     -- Backgrounds
     C.bg = C.yellow.dark
-    if O.transparent_bg == true then
-        C.bg = C.none
-    end
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
     C.bg_highlight = (O.transparent_bg and C.xterm.grey) or U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
