@@ -7,6 +7,8 @@ function M.get(terminal)
     local T = require("foggy.groups.terminal" .. terminal)
     if not T == "kitty" or "alacritty" then
         vim.api.nvim_err_write("Terminal is invalid: " .. terminal)
+    else
+        T()
     end
 end
 
