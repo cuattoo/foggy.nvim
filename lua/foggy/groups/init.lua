@@ -52,4 +52,8 @@ function M.set_term_colors()
     end
 end
 
+function M.set_terminal_highlighting()
+    require('foggy.groups.terminal')
+end
+
 return M

@@ -14,7 +14,7 @@ function M.load(opts)
     C.setup(opts)
 
     -- Apply theme
-    G.set_terminal_highlight()
+    G.set_terminal_highlighting()
     require('foggy.colors').extend_palette(C.options.theme)
     U.highlight(G.get_groups())
     --G.set_term_colors()
