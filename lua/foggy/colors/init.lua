@@ -23,7 +23,7 @@ function C.extend_palette(style)
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = C.yellow.dark
+    C.bg = C.gray.g4
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
     C.bg_highlight = U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
@@ -40,7 +40,7 @@ function C.extend_palette(style)
 
     -- Foregrounds
     C.fg = C.white.snow1
-    C.fg_inactive = C.gray.g4
+    C.fg_inactive = C.gray.g2
     C.fg_hightlight = (O.transparent_bg and O.bg_highlight and C.white.snow1) or C.white.default
     C.fg_bright = C.white.snow2
     C.fg_dark = C.white.default
