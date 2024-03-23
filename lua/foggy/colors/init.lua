@@ -23,7 +23,7 @@ function C.extend_palette(style)
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = C.gray.g4
+    C.bg = C.gray.g2
     C.bg_dark = (O.transparent_bg and C.none) or C.black.b2
     C.bg_highlight = U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
     C.bg_visual = C.bg_highlight
