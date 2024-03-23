@@ -1,9 +1,9 @@
-local C = require("foggy.config")
+local C = require("foggy.colors")
 
 local M = {}
 
 function M.set_highlighting()
-    local fg_rgb = C.options.colors.fg
+    local fg_rgb = C.fg
 
     -- Convert RGB values to HEX format
     local hex_code = string.format("#%02x%02x%02x", math.floor(fg_rgb[1]),
