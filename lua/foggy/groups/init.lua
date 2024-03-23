@@ -52,8 +52,17 @@ function M.set_term_colors()
     end
 end
 
-function M.set_terminal_highlighting()
-    require('foggy.groups.terminal')
+local TerminalGroup = {
+    kitty = require("foggy.groups.terminal.kitty"),
+    alacritty = require("foggy.groups.terminal.alacritty")
+}
+M.term = TerminalGroup
+function M.set_terminal_highlighting(terminal)
+    if TerminalGroup[terminal] ~= nil then
+        TerminalGroup[terminal].set_highlighting()
+    else
+        print("Invalid terminal: ", terminal)
+    end
 end
 
 return M

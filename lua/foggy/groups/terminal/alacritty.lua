@@ -9,8 +9,9 @@ function M.set_highlighting()
     local hex_code = string.format("#%02x%02x%02x", math.floor(fg_rgb[1]),
         math.floor(fg_rgb[2]), math.floor(fg_rgb[3]))
 
-    -- Execute shell command using Vim API to setKitty's dynamic-background property
-    vim.fn.system({ "kitty", "@", "set-colors", "--all", "foreground=" .. hex_code })
+    -- Set the Alacritty's dynamic_background config option
+    vim.opt.g.alacritty_dynamic_background = true
+    vim.opt.g["alacritty_foreground"] = hex_code
 end
 
 return M
