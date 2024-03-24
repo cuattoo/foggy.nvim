@@ -41,7 +41,7 @@ function C.extend_palette(style)
     -- Foregrounds
     C.fg = C.white.white.bright
     C.fg_inactive = C.gray.dull1
-    C.fg_hightlight = (O.transparent_bg and O.bg_highlight and C.white.snow1) or C.white.default
+    C.fg_hightlight = C.white.dim
     C.fg_bright = C.white.dim
     C.fg_dark = C.white.default
     C.fg_sidebar = C.white.default
