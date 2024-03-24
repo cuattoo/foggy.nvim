@@ -188,7 +188,6 @@ colors = {
         dim = "#F7F7F7",    -- Diminished brightness but retained sufficient contrast for reading comfortably
         bright = "#F2F8FC", -- Brightens the standard white for optimal visibility against dark themes
         soft = "#F5F5F5",   -- Further reduction in contrast compared to 'base' (still legible against most backgrounds)o
-
     },
 
     blue = {
