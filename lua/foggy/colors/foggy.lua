@@ -142,7 +142,7 @@ colors = {
         normal = "#262834",
     },
 
-    grey = {
+    gray = {
         dull0 = "#494d5b",
         dull1 = "#535766",
         dull2 = "#5d606e",
