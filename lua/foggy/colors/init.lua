@@ -43,8 +43,8 @@ function C.extend_palette(style)
     C.fg_inactive = C.gray.dull1
     C.fg_hightlight = C.white.dim
     C.fg_bright = C.white.dim
-    C.fg_dark = C.white.default
-    C.fg_sidebar = C.white.default
+    C.fg_dark = C.white.dim
+    C.fg_sidebar = C.white.dim
     C.fg_fold = C.fg
     C.fg_selected = C.fg_bright
 
