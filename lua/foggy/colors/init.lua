@@ -31,7 +31,7 @@ function C.extend_palette(style)
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
     C.bg_statusline = C.bg_dark
-    C.bg_selected = U.blend(C.gray.dull1, C.black.b0, 0.4)
+    C.bg_selected = U.blend(C.gray.dull1, C.black.dark, 0.4)
     C.bg_fold = C.gray.dull2
 
     -- Borders
@@ -90,7 +90,7 @@ function C.extend_palette(style)
         C.bg_sidebar = C.none
         C.bg_popup = C.none
         C.bg_statusline = C.none
-        C.bg_selected = U.blend(C.gray.dull1, C.black.b0, 0.4)
+        C.bg_selected = U.blend(C.gray.dull1, C.black.dark, 0.4)
     end
 
 
@@ -98,8 +98,8 @@ function C.extend_palette(style)
     if style == "foggy" then
         C.bg = (O.transparent_bg and C.none) or C.gray.hl2
         C.bg_dark = (O.transparent_bg and C.none) or C.hl0
-        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or
-            U.blend(C.magenta.bright, C.xterm.grey, O.cursorline.blend)
+        C.bg_highlight = (O.transparent_bg and C.xterm.grey) or C.white.dim
+        U.blend(C.magenta.bright, C.xterm.grey, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
         C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
         C.bg_popup = (O.transparent_bg and C.none) or C.bg
