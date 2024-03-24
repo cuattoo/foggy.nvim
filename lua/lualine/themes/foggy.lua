@@ -3,7 +3,7 @@ local C = require 'foggy.colors'
 local foggy = {}
 
 foggy.normal = {
-    a = { bg = C.xterm.white, fg = C.gray.dull3, gui = 'bold' },
+    a = { bg = C.white.dim, fg = C.gray.dull3, gui = 'bold' },
     b = { bg = C.bg, fg = C.gray.dull3 },
     c = { bg = C.bg_statusline, fg = C.white.default },
 }
