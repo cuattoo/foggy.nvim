@@ -15,20 +15,20 @@ return {
     Boolean = { link = 'Number' },       --  a boolean constant: TRUE, false
     Float = { link = 'Number' },         --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.gray.b5 },         --   a string constant: "this is a string"
+    String = { fg = C.gray.gyn1 },         --   a string constant: "this is a string"
     Character = { fg = C.green.base },   --  a character constant: 'c', '\n'
-    Variable = { fg = C.fg },
+    Variable = { fg = C.magenta.bright },
     Namespace = { fg = C.yellow.dim },
-    Field = { fg = C.white.snow1 },
+    Field = { fg = C.gray.gyn2 },
 
     Title = { fg = C.yellow.base },
 
     Builtin = { fg = C.red.rust },
 
-    Identifier = { fg = C.gray.b5 },                      -- (preferred) any variable name
+    Identifier = { fg = C.gray.gyn1 },                      -- (preferred) any variable name
     Function = { fg = C.magenta.bright },                 -- function name (also: methods for classes)
 
-    Keyword = { fg = C.gray.b5, bold = O.bold_keywords }, --  any other keyword
+    Keyword = { fg = C.gray.gyn1, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' },                     -- (preferred) any statement
     Conditional = { link = 'Keyword' },                   --  if, then, else, endif, switch, etc.
     Repeat = { link = 'Keyword' },                        --   for, do, while, etc.
@@ -42,7 +42,7 @@ return {
     Define = { fg = C.blue.base },                        --   preprocessor #define
     PreCondit = { link = 'Macro' },                       --  preprocessor #if, #else, #endif, etc.
 
-    Comment = { fg = C.gray.g4, italic = O.italic_comments },
+    Comment = { fg = C.gray.gy0, italic = O.italic_comments },
 
     Type = { fg = C.yellow.base },       -- (preferred) int, long, char, etc.
     StorageClass = { link = 'Keyword' }, -- static, register, volatile, etc.
@@ -61,21 +61,21 @@ return {
     Italic = { italic = true },
 
     -- ("Ignore", below, may be invisible...)
-    Ignore = { fg = C.gray.g2 },                   -- (preferred) left blank, hidden  |hl-Ignore|
+    Ignore = { fg = C.gray.dull2 },                   -- (preferred) left blank, hidden  |hl-Ignore|
 
     Error = { fg = C.error },                      -- (preferred) any erroneous construct
-    Todo = { bg = C.yellow.dim, fg = C.black.b0 }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { bg = C.yellow.dim, fg = C.black.dark }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Note = { fg = C.black.b0, bg = C.info },
 
     -- What are these?
-    qfLineNr = { fg = C.gray.g4 },
+    qfLineNr = { fg = C.gray.gy0 },
     qfFileName = { fg = C.blue.b1 },
 
     htmlH1 = { fg = C.yellow.base, bold = true },
     htmlH2 = { fg = C.orange.base },
 
     Link = { fg = C.blue.b1, underline = true },
-    CodeBlock = { bg = C.black.b1, fg = C.fg },
+    CodeBlock = { bg = C.black.medium, fg = C.fg },
 
     mkdHeading = { link = 'htmlH1' },
     mkdCode = { link = 'CodeBlock' },
@@ -94,9 +94,9 @@ return {
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
     ['@text.todo.unchecked'] = { fg = C.blue.b1 },  -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.base }, -- For brackets and parens.
-    ['@text.literal.markdown_inline'] = { bg = C.black.b0, fg = C.blue.b1 },
+    ['@text.literal.markdown_inline'] = { bg = C.black.dark, fg = C.blue.b1 },
     ['@text.literal.markdown'] = { link = 'Normal' },
-    ['helpCommand'] = { bg = C.black.b0, fg = C.blue.b1 },
+    ['helpCommand'] = { bg = C.black.dark, fg = C.blue.b1 },
 
     debugPC = { bg = C.bg_sidebar },         -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { fg = C.red.bright }, -- used for breakpoint colors in terminal-debug

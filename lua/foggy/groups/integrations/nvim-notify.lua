@@ -22,8 +22,8 @@ return {
     NotifyDEBUGTitle = { fg = C.orange.bright, bold = true },
     NotifyDEBUGBody = { fg = C.fg },
 
-    NotifyTRACEBorder = { fg = C.gray.g5 },
-    NotifyTRACEIcon = { fg = C.gray.g5 },
-    NotifyTRACETitle = { fg = C.gray.g5, bold = true },
+    NotifyTRACEBorder = { fg = C.gray.gyn1 },
+    NotifyTRACEIcon = { fg = C.gray.gyn1 },
+    NotifyTRACETitle = { fg = C.gray.gyn1, bold = true },
     NotifyTRACEBody = { fg = C.fg },
 }

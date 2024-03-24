@@ -14,8 +14,8 @@ function C.extend_palette(style)
 
     -- Swap background
     if O.swap_backgrounds then
-        C.gray.g0 = C.black.b1
-        C.black.b1 = C.gray.g0
+        C.gray.dull0 = C.black.dark
+        C.black.dark = C.gray.dull0
     end
 
 
@@ -23,25 +23,25 @@ function C.extend_palette(style)
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = C.gray.g0
-    C.bg_dark = C.black.b0
-    C.bg_highlight = C.gray.g1
+    C.bg = C.gray.dull1
+    C.bg_dark = C.black.dark
+    C.bg_highlight = C.gray.dull2
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
     C.bg_statusline = C.bg_dark
-    C.bg_selected = U.blend(C.gray.g2, C.black.b0, 0.4)
-    C.bg_fold = C.gray.g2
+    C.bg_selected = U.blend(C.gray.dull1, C.black.b0, 0.4)
+    C.bg_fold = C.gray.dull2
 
     -- Borders
     C.border_fg = C.fg
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
-    C.fg = C.white.snow1
-    C.fg_inactive = C.gray.g2
+    C.fg = C.white.white.bright
+    C.fg_inactive = C.gray.dull1
     C.fg_hightlight = (O.transparent_bg and O.bg_highlight and C.white.snow1) or C.white.default
-    C.fg_bright = C.white.snow2
+    C.fg_bright = C.white.dim
     C.fg_dark = C.white.default
     C.fg_sidebar = C.white.default
     C.fg_fold = C.fg
@@ -62,8 +62,8 @@ function C.extend_palette(style)
 
     -- Diffs
     C.diff = {
-        change0 = U.blend(C.white.default, C.bg, 0.05),
-        change1 = U.blend(C.white.default, C.bg, diff_blend),
+        change0 = U.blend(C.white.dim, C.bg, 0.05),
+        change1 = U.blend(C.white.dim, C.bg, diff_blend),
         add = U.blend(C.green.base, C.bg, diff_blend),
         delete = U.blend(C.red.soft, C.bg, diff_blend),
     }
@@ -72,7 +72,7 @@ function C.extend_palette(style)
     C.git = {
         add = C.green.base,
         delete = C.red.soft,
-        change = C.white.snow1,
+        change = C.white.bright,
     }
 
     -- Diagnostics
@@ -85,14 +85,18 @@ function C.extend_palette(style)
     if O.transparent_bg then
         C.bg = C.none
         C.bg_dark = C.none
-        C.bg_highlight = U.blend(C.magenta.bright, C.gray.g2, O.cursorline.blend)
+        C.bg_highlight = U.blend(C.magenta.bright, C.gray.dull2, O.cursorline.blend)
+        C.bg_sidebar = C.none
+        C.bg_popup = C.none
+        C.bg_statusline = C.none
+        C.bg_selected = U.blend(C.gray.dull1, C.black.b0, 0.4)
     end
 
 
 
     if style == "foggy" then
-        C.bg = (O.transparent_bg and C.none) or C.gray.foggy
-        C.bg_dark = (O.transparent_bg and C.none) or C.gray.taupe
+        C.bg = (O.transparent_bg and C.none) or C.gray.hl2
+        C.bg_dark = (O.transparent_bg and C.none) or C.hl0
         C.bg_highlight = (O.transparent_bg and C.xterm.grey) or
             U.blend(C.magenta.bright, C.xterm.grey, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
@@ -121,7 +125,7 @@ function C.extend_palette(style)
 
     -- Cursorline
     if O.cursorline.theme == 'light' then
-        C.bg_highlight = U.blend(C.gray.g1, C.bg, O.cursorline.blend)
+        C.bg_highlight = U.blend(C.gray.dull2, C.bg, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
     end
 end

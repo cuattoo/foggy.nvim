@@ -15,7 +15,7 @@ return {
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
-    ['@punctuation.bracket'] = { fg = C.gray.g5 },       -- For brackets and parens.
+    ['@punctuation.bracket'] = { fg = C.gray.hl2 },      -- For brackets and parens.
     ['@punctuation.special'] = { link = '@operator' },   -- For special punctutation that does not fall in the catagories before.
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
 
@@ -25,7 +25,7 @@ return {
     ['@string.escape'] = { fg = C.magenta.bright }, -- For escape characters within a string.
 
     --- Functions
-    ['@constructor'] = { fg = C.gray.g5 },         -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ['@constructor'] = { fg = C.gray.gyn1 },       -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     ['@parameter'] = { fg = C.fg, italic = true }, -- For parameters of a function.
     ['@parameter.builtin'] = { link = 'Builtin' }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -38,7 +38,7 @@ return {
     --- Types
     ['@type.builtin'] = { link = 'Type' },
     ['@field'] = { link = 'Field' }, -- For fields.
-    ['@property'] = { fg = C.white.default },
+    ['@property'] = { fg = C.yellow.enchanted },
 
     --- Identifiers
     ['@variable'] = { link = 'Variable' },        -- Any variable name that does not have another highlight.
@@ -47,7 +47,7 @@ return {
     --- Text
     --['@spell'] = {},
     -- ["@text.literal.markdown"] = { },
-    ['@text.literal.markdown_inline'] = { bg = C.black.b2, fg = C.fg },
+    ['@text.literal.markdown_inline'] = { bg = C.black.normal, fg = C.fg },
     ['@text.reference'] = { link = 'Link' },
     ['@text.todo.unchecked'] = { fg = C.blue.b1 },    -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.bright }, -- For brackets and parens.

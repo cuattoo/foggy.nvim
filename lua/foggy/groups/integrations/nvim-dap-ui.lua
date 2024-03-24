@@ -2,7 +2,7 @@ local C = require 'foggy.colors'
 
 return {
 
-    DapUINormal = { bg = C.black.b1 },
+    DapUINormal = { bg = C.black.normal },
 
     DapUIStop = { fg = C.red.bright, bold = true },
     DapUIRestart = { fg = C.green.bright, bold = true },

@@ -29,7 +29,7 @@ return {
     DiagnosticUnderlineHint = { undercurl = true, sp = C.hint },             -- Used to underline "Hint" diagnostics
     DiagnosticText = { bg = C.black.b1 },
 
-    LspSignatureActiveParameter = { bg = C.gray.g3, bold = true },
+    LspSignatureActiveParameter = { bg = C.gray.dull3, bold = true },
     LspCodeLens = { fg = C.comment },
 
     LspInfoBorder = { link = 'FloatBorder' },

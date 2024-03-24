@@ -4,11 +4,11 @@ local O = require('foggy.config').options
 local bg
 local fg
 if O.ts_context.dark_background then
-    bg = C.black.b0
-    fg = C.gray.b0
+    bg = C.black.dark
+    fg = C.gray.dull0
 else
-    bg = C.gray.g2
-    fg = C.gray.g4
+    bg = C.gray.dull2
+    fg = C.gray.gyn0
 end
 
 return {

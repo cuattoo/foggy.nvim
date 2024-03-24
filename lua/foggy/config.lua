@@ -22,7 +22,6 @@ local defaults = {
 
     -- Enable general editor background transparency.
     transparent_bg = false,
-
     bg_hightlight = true,
     -- Enable brighter float border.
     bright_border = false,

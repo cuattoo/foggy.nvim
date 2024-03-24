@@ -3,11 +3,11 @@ local C = require 'foggy.colors'
 return {
     LazyH1 = { fg = C.yellow.base, bold = true },
     LazyButtonActive = { link = 'LazyH1' },
-    LazyButton = { fg = C.white0 },
+    LazyButton = { fg = C.white.dim },
     LazySpecial = { fg = C.yellow.base },
 
     LazyProgressDone = { fg = C.green.bright },
-    LazyProgressTodo = { fg = C.gray.g4 },
+    LazyProgressTodo = { fg = C.gray.dull3 },
 
     LazyCommitType = { fg = C.yellow.base },
 }

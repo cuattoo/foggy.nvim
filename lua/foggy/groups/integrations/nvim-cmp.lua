@@ -2,7 +2,7 @@ local C = require 'foggy.colors'
 
 return {
 
-    CmpItemAbbrDeprecated = { fg = C.gray.g4 },
+    CmpItemAbbrDeprecated = { fg = C.gray.dull3 },
     CmpItemAbbrMatch = { fg = C.blue.base, bold = true },
     CmpItemAbbrMatchFuzzy = { link = 'CmpItemAbbrMatch' },
 
@@ -10,7 +10,7 @@ return {
     CmpItemKindProperty = { link = '@proprty' },
     CmpItemKindEvent = { link = 'Type' },
 
-    CmpItemKindText = { fg = C.gray.g4 },
+    CmpItemKindText = { fg = C.gray.dull3 },
     CmpItemKindEnum = { link = 'Type' },
     CmpItemKindKeyword = { link = 'Keyword' },
 
@@ -25,11 +25,11 @@ return {
     CmpItemKindOperator = { link = 'Operator' },
 
     CmpItemKindVariable = { fg = C.cyan.base },
-    CmpItemKindFile = { fg = C.blue.base },
+    CmpItemKindFile = { fg = C.magenta.bright },
 
     CmpItemKindUnit = { link = 'Constant' },
-    CmpItemKindSnippet = { fg = C.blue.base },
-    CmpItemKindFolder = { fg = C.yellow.dark },
+    CmpItemKindSnippet = { fg = C.yellow.base },
+    CmpItemKindFolder = { fg = C.yellow.enchanted },
 
     CmpItemKindMethod = { link = 'Function' },
     CmpItemKindValue = { link = 'Constant' },

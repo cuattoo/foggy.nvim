@@ -6,7 +6,7 @@ return {
     DashboardHeader = { fg = C.yellow.base, bold = true },
     DashboardFooter = { fg = C.cyan.base },
     DashboardCenter = { fg = C.green.base },
-    DashboardShortCut = { fg = C.gray.g4, bold = true },
+    DashboardShortCut = { fg = C.gray.dull3, bold = true },
 
     -- Hyper.
     DashboardProjectTitle = { fg = C.orange.base, bold = true },

@@ -3,7 +3,7 @@ local C = require 'foggy.colors'
 return {
 
     terminal_color_0 = C.black.b0,
-    terminal_color_8 = C.gray.g2,
+    terminal_color_8 = C.gray.dull2,
 
     terminal_color_1 = C.red.base,
     terminal_color_9 = C.red.bright,
@@ -23,6 +23,6 @@ return {
     terminal_color_6 = C.cyan.base,
     terminal_color_14 = C.cyan.bright,
 
-    terminal_color_7 = C.white0,
-    terminal_color_15 = C.white1,
+    terminal_color_7 = C.white.dim,
+    terminal_color_15 = C.white.bright,
 }

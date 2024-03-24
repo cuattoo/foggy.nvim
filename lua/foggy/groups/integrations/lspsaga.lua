@@ -1,8 +1,8 @@
 local C = require 'foggy.colors'
 
 return {
-    SagaBorder = { bg = C.black.b2, fg = C.fg_float_border },
-    SagaNormal = { bg = C.black.b2 },
+    SagaBorder = { bg = C.black.normal, fg = C.fg_float_border },
+    SagaNormal = { bg = C.black.normal },
 
     HoverBorder = { link = 'FloatBorder' },
     HoverNormal = { link = 'NormalFloat' },
@@ -12,7 +12,7 @@ return {
 
     DiagnosticPos = { fg = C.fg },
     DiagnosticWord = { fg = C.fg },
-    DiagnosticSource = { fg = C.gray.g4 },
+    DiagnosticSource = { fg = C.gray.dull3 },
     DiagnosticNormal = { link = 'NormalFloat' },
     DiagnosticShowNormal = { link = 'NormalFloat' },
     DiagnosticShowBorder = { link = 'FloatBorder' },
