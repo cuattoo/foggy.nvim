@@ -35,7 +35,7 @@ function C.extend_palette(style)
     C.bg_fold = C.gray.dull2
 
     -- Borders
-    C.border_fg = C.fg
+    C.border_fg = C.bg_highlight
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
