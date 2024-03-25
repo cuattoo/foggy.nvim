@@ -28,8 +28,8 @@ function C.extend_palette(style)
     C.bg_inactive = C.black.darker
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
-    C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
-    C.bg_popup = (O.transparent_bg and C.none) or C.bg
+    C.bg_sidebar = C.bg
+    C.bg_popup = C.gray.dust0
     C.bg_statusline = C.bg_dark
     C.bg_selected = U.blend(C.gray.dull1, C.black.dark, 0.4)
     C.bg_fold = C.gray.dull2

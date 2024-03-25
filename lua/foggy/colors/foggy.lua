@@ -153,10 +153,10 @@ colors = {
         dull3 = "#787D8B", -- The final entry before making another major change; serves as an anchor point for future adjustments
 
         -- Enhanced version of g0 (formerly known as bg) with a minor tweak to align it with the updated dull gray scheme
-        g0 = "#414553", -- Previously named 'bg', redefined here after updating its relation to dull0
+        g0 = "#2E3340", -- Previously named 'bg', redefined here after updating its relation to dull0
 
         -- Polar Night - Enhanced grey spectrum for improved depth and contrast
-        g1 = "#2E3340", -- Most profound and intense shade; establishes the bottom boundary of the Polar Night section
+        g1 = "#414553", -- Most profound and intense shade; establishes the bottom boundary of the Polar Night section
         g2 = "#3A4155", -- Gradual darkening creates a sense of distance between layers
         g3 = "#48536F", -- Continuation of the darkening trend, widening the overall range
         g4 = "#566180", -- Broaded range to offer maximum intensity before transitioning into Lavender Snow
