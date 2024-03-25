@@ -143,45 +143,76 @@ colors = {
     },
 
     gray = {
-        dull0 = "#494d5b",
-        dull1 = "#535766",
-        dull2 = "#5d606e",
-        dull3 = "#676977",
+        -- #region Dark Theme Colors
 
-        lgray0 = "#7e808b",
-        lgray1 = "#858793",
-        lgray2 = "#8c8e99",
+        -- Improved Dull Grays
+        -- Increased contrast and uniqueness between each step to provide a more sophisticated look without overwhelming the user interface
+        dull0 = "#5A5F6E", -- Original starting point for all dull grays; slightly dimmed compared to previous version
+        dull1 = "#646977", -- Slight increase in value for the next dull gray; creates a natural gradient
+        dull2 = "#6E7281", -- Another small adjustment to follow our new gradient trend
+        dull3 = "#787D8B", -- The final entry before making another major change; serves as an anchor point for future adjustments
 
-        hl0 = "#9496a2",
-        hl1 = "#a09fac",
-        hl2 = "#ababbc",
+        -- Enhanced version of g0 (formerly known as bg) with a minor tweak to align it with the updated dull gray scheme
+        g0 = "#414553", -- Previously named 'bg', redefined here after updating its relation to dull0
 
-        gy0 = "#abb2bf",
-        gy1 = "#bcc0ca",
-        gy2 = "#ccd0db",
-        gy3 = "#dde1ec",
-        gy4 = "#eaedef",
+        -- Polar Night - Enhanced grey spectrum for improved depth and contrast
+        g1 = "#2E3340", -- Most profound and intense shade; establishes the bottom boundary of the Polar Night section
+        g2 = "#3A4155", -- Gradual darkening creates a sense of distance between layers
+        g3 = "#48536F", -- Continuation of the darkening trend, widening the overall range
+        g4 = "#566180", -- Broaded range to offer maximum intensity before transitioning into Lavender Snow
 
-        gyn0 = "#708391", -- New gray for better contrast against the bg
-        gyn1 = "#8096a6",
-        gyn2 = "#90adb7",
+        -- Light Gray Variants for improving visibility
+        -- Adjustment of existing color codes for light grayscale, adding an extra layer of perceived brightness
+        lgray0 = "#868B99", -- First addition to the light gray series; provides good balance between midrange whites and darker grays
+        lgray1 = "#8E94A4", -- Small increment to match our desired brightness standardization pattern
+        lgray2 = "#969DAC", -- Last entry within this group before venturing into greys reserved for specific purposes
 
-        gyg0 = "#acc0cd", -- Green-inspired grays
-        gyg1 = "#bec7cf",
-        gyg2 = "#cdd8df",
-        gyg3 = "#dae3e9",
+        -- Highlight Shades for drawing attention
+        -- Reduces opacity to 60% while maintaining sufficient contrast to stand out from regular content
+        hl0 = "#A0A5B7",
+        hl1 = "#AEB3CD",
+        hl2 = "#BEC1DB",
 
-        ligy0 = "#526072", -- Blended g2 & gy2
-        ligy1 = "#5a6675", -- Slightly brigther than above
-        ligy2 = "#59687b", -- Similar blend of g3 & gy3
-        ligy3 = "#637083", -- Closest match to gy4
+        -- Grey Scales Specifically Designed for use in Light Interfaces
+        -- Smooth transitions from one color to another across multiple entries, targeting areas like status bars or panels
+        gy0 = "#B5B9CB",
+        gy1 = "#C8CADA",
+        gy2 = "#DDDDED",
+        gy3 = "#EEEFFF",
+        gy4 = "#FEFFFF", -- Represents pure white space, allowing us to customize panel appearance further if needed
 
-        -- New pure yellow-green gray blends
-        ygg0 = "#829da8", -- Blend of y2 & gy2
-        ygg1 = "#9bbdc8", -- Blend of y1 & gy1, softer transition
-        ygg2 = "#addce5", -- Blend of y0 & gy1, very pale green
+        -- Yellow Green Accent - Modified Gradients for Blue and Green
+        -- Adaptation of existing gradients to better fit within our updated color scheme, focusing particularly on blues and greens
+        gyn0 = "#748BA8",
+        gyn1 = "#859CB7",
+        gyn2 = "#94ADC5",
+
+        gyg0 = "#ADBACD",
+        gyg1 = "#BDCEDE",
+        gyg2 = "#CEDFEF",
+        gyg3 = "#DEFEF1",
+
+        -- Lower Contrast Yellow-Green Shades for Text and Comments
+        -- Toned down versions intended for use primarily within text elements such as comments and variable names
+        ligy0 = "#586780",
+        ligy1 = "#616F86",
+        ligy2 = "#697991",
+        ligy3 = "#71849D",
+
+        -- Brighter Yellow-Greens for Identifiers and Functions
+        -- Higher saturation options that will be especially visible when highlighting key programming constructs
+        ygg0 = "#8EA3B3",
+        ygg1 = "#A0B8C8",
+        ygg2 = "#B4CEDC",
+        ygg3 = "#C8E3EB",
+
+        -- Additional Yellow-Greens for High Visibility Situations
+        -- More pronounced highlights that can catch users' eyes during navigation or critical operations
+        hygg0 = "#95ABC1",
+        hygg1 = "#A6BCD2",
+        hygg2 = "#B9D1E1",
+        hygg3 = "#CDF6F3",
     },
-
     white = {
         base = "#FFFFFF",   -- Standard RGB representation
 
@@ -239,7 +270,27 @@ colors = {
         bright = "#bfaabd",
         soft = "#dcc5dd",
         dim = "#af8ea4",
-    }
+    }, -- Additional colors for enhanced harmony
+    -- Feel free to adjust or remove as needed
+    purple = {
+        base = "#9d7cd8",
+        bright = "#b59be5",
+        soft = "#d2c1ed",
+        dim = "#8363a2",
+    },
+
+    teal = {
+        base = "#4fd1c5",
+        bright = "#75e0d9",
+        soft = "#a9f1e3",
+        dim = "#3aa292",
+    },
+    brown = {
+        base = "#ab7967",
+        bright = "#c8937b",
+        soft = "#dcbca5",
+        dim = "#7e5747",
+    },
 }
 -- `white0` is used as the default fg, and has a blue tint.
 -- Reduce that amount of tint.
