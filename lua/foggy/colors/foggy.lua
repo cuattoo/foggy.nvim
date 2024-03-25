@@ -160,6 +160,8 @@ colors = {
         g2 = "#3A4155", -- Gradual darkening creates a sense of distance between layers
         g3 = "#48536F", -- Continuation of the darkening trend, widening the overall range
         g4 = "#566180", -- Broaded range to offer maximum intensity before transitioning into Lavender Snow
+        gd0 = "#2c2f3b",
+        gd1 = "#383e4d",
 
         -- Light Gray Variants for improving visibility
         -- Adjustment of existing color codes for light grayscale, adding an extra layer of perceived brightness
