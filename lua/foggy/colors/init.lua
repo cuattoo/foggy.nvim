@@ -23,10 +23,10 @@ function C.extend_palette(style)
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = C.gray.g1
+    C.bg = C.gray.g0
     C.bg_dark = C.black.dark
     C.bg_inactive = C.black.darker
-    C.bg_highlight = C.gray.dull2
+    C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
     C.bg_popup = (O.transparent_bg and C.none) or C.bg
