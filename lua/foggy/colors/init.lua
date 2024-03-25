@@ -23,7 +23,7 @@ function C.extend_palette(style)
     -- Some of the format is from @folke/tokyonight.nvim.
 
     -- Backgrounds
-    C.bg = C.gray.dull1
+    C.bg = C.gray.dull0
     C.bg_dark = C.black.dark
     C.bg_inactive = C.black.darker
     C.bg_highlight = C.gray.dull2
