@@ -154,14 +154,13 @@ colors = {
 
         -- Enhanced version of g0 (formerly known as bg) with a minor tweak to align it with the updated dull gray scheme
         g0 = "#2E3340", -- Previously named 'bg', redefined here after updating its relation to dull0
-
+        gd0 = "#2c2f3b",
+        gd1 = "#383e4d",
         -- Polar Night - Enhanced grey spectrum for improved depth and contrast
         g1 = "#414553", -- Most profound and intense shade; establishes the bottom boundary of the Polar Night section
         g2 = "#3A4155", -- Gradual darkening creates a sense of distance between layers
         g3 = "#48536F", -- Continuation of the darkening trend, widening the overall range
         g4 = "#566180", -- Broaded range to offer maximum intensity before transitioning into Lavender Snow
-        gd0 = "#2c2f3b",
-        gd1 = "#383e4d",
 
         -- Light Gray Variants for improving visibility
         -- Adjustment of existing color codes for light grayscale, adding an extra layer of perceived brightness
@@ -225,15 +224,19 @@ colors = {
 
     blue = {
         base = "#30b0fe",
-        b0 = "#5e81ac", -- Modified name to 'b0' from 'blue1'
-        b1 = "#81a1c1", -- Modified name to 'b1' from 'blue2'
-        b2 = "#88c0d0", -- Modified name to 'b2' from 'blue3'
-        b4 = "#d1f2f7", -- Added
+        bright = "#5ec7ff", -- Brighter shade of blue
+        soft = "#7fbfe7",   -- Softer shade of blue
+        dim = "#1d87c2",    -- Dimmer shade of blue
+        b0 = "#4a8cc0",     -- Adjusted lighter shade of blue
+        b1 = "#68a6cc",     -- Adjusted intermediate shade of blue
+        b2 = "#86c0d9",     -- Adjusted brighter shade of blue
+        b4 = "#b8e6f3",     -- Adjusted brightest shade of blue
     },
 
     cyan = {
         base = "#8fbcbb",
         bright = "#9fc6c5",
+        soft = "#b4cdd0",
         dim = "#80b3b2",
     },
 

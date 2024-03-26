@@ -15,10 +15,10 @@ return {
     Boolean = { link = 'Number' },       --  a boolean constant: TRUE, false
     Float = { link = 'Number' },         --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.gray.gyn1 },         --   a string constant: "this is a string"
+    String = { fg = C.gray.gyn1 },       --   a string constant: "this is a string"
     Character = { fg = C.green.base },   --  a character constant: 'c', '\n'
     Variable = { fg = C.magenta.bright },
-    Namespace = { fg = C.yellow.dim },
+    Namespace = { fg = C.gray.hl0 },
     Field = { fg = C.gray.gyn2 },
 
     Title = { fg = C.yellow.base },
@@ -26,23 +26,23 @@ return {
     Builtin = { fg = C.red.rust },
 
     Identifier = { fg = C.gray.gyn1 },                      -- (preferred) any variable name
-    Function = { fg = C.magenta.bright },                 -- function name (also: methods for classes)
+    Function = { fg = C.magenta.bright },                   -- function name (also: methods for classes)
 
     Keyword = { fg = C.gray.gyn1, bold = O.bold_keywords }, --  any other keyword
-    Statement = { link = 'Keyword' },                     -- (preferred) any statement
-    Conditional = { link = 'Keyword' },                   --  if, then, else, endif, switch, etc.
-    Repeat = { link = 'Keyword' },                        --   for, do, while, etc.
-    Label = { link = 'Keyword' },                         --    case, default, etc.
-    Operator = { fg = C.fg },                             -- "sizeof", "+", "*", etc.
+    Statement = { link = 'Keyword' },                       -- (preferred) any statement
+    Conditional = { link = 'Keyword' },                     --  if, then, else, endif, switch, etc.
+    Repeat = { link = 'Keyword' },                          --   for, do, while, etc.
+    Label = { link = 'Keyword' },                           --    case, default, etc.
+    Operator = { fg = C.fg },                               -- "sizeof", "+", "*", etc.
 
-    Macro = { fg = C.yellow.base },                       -- same as Define
-    Exception = { link = 'Macro' },                       --  try, catch, throw
-    PreProc = { link = 'Macro' },                         -- (preferred) generic preprocessor
-    Include = { fg = C.blue.base },                       --  preprocessor #include
-    Define = { fg = C.blue.base },                        --   preprocessor #define
-    PreCondit = { link = 'Macro' },                       --  preprocessor #if, #else, #endif, etc.
+    Macro = { fg = C.purple.bright },                       -- same as Define
+    Exception = { link = 'Macro' },                         --  try, catch, throw
+    PreProc = { link = 'Macro' },                           -- (preferred) generic preprocessor
+    Include = { fg = C.blue.base },                         --  preprocessor #include
+    Define = { fg = C.blue.base },                          --   preprocessor #define
+    PreCondit = { link = 'Macro' },                         --  preprocessor #if, #else, #endif, etc.
 
-    Comment = { fg = C.gray.gy0, italic = O.italic_comments },
+    Comment = { fg = C.gray.gd0, italic = O.italic_comments },
 
     Type = { fg = C.yellow.base },       -- (preferred) int, long, char, etc.
     StorageClass = { link = 'Keyword' }, -- static, register, volatile, etc.
@@ -61,9 +61,9 @@ return {
     Italic = { italic = true },
 
     -- ("Ignore", below, may be invisible...)
-    Ignore = { fg = C.gray.dull2 },                   -- (preferred) left blank, hidden  |hl-Ignore|
+    Ignore = { fg = C.gray.dull2 },                  -- (preferred) left blank, hidden  |hl-Ignore|
 
-    Error = { fg = C.error },                      -- (preferred) any erroneous construct
+    Error = { fg = C.error },                        -- (preferred) any erroneous construct
     Todo = { bg = C.yellow.dim, fg = C.black.dark }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Note = { fg = C.black.b0, bg = C.info },
 

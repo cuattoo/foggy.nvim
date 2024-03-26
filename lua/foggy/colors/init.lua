@@ -94,7 +94,7 @@ function C.extend_palette(style)
     end
 
 
-
+    -- TODO
     -- if style == "foggy" then
     --     C.bg = (O.transparent_bg and C.none) or C.gray.hl2
     --     C.bg_dark = (O.transparent_bg and C.none) or C.hl0
