@@ -6,7 +6,7 @@ foggy.normal = {
     a = { bg = C.orange.bright, fg = C.gray.dull3, gui = 'bold' },
     b = { bg = C.bg, fg = C.gray.dull3 },
     c = { bg = C.bg_statusline, fg = C.white.dim },
-    z = { { bg = C.orange.base } }
+    z = { bg = C.orange.base }
 }
 
 foggy.insert = {
