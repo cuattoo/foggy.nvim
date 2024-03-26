@@ -3,9 +3,10 @@ local C = require 'foggy.colors'
 local foggy = {}
 
 foggy.normal = {
-    a = { bg = C.purple.bright, fg = C.gray.dull3, gui = 'bold' },
+    a = { bg = C.orange.bright, fg = C.gray.dull3, gui = 'bold' },
     b = { bg = C.bg, fg = C.gray.dull3 },
     c = { bg = C.bg_statusline, fg = C.white.dim },
+    z = { { bg = C.orange.base } }
 }
 
 foggy.insert = {
