@@ -42,7 +42,7 @@ return {
     Define = { fg = C.blue.base },                          --   preprocessor #define
     PreCondit = { link = 'Macro' },                         --  preprocessor #if, #else, #endif, etc.
 
-    Comment = { fg = C.gray.gd0, italic = O.italic_comments },
+    Comment = { fg = C.gray.gd1, italic = O.italic_comments },
 
     Type = { fg = C.yellow.base },       -- (preferred) int, long, char, etc.
     StorageClass = { link = 'Keyword' }, -- static, register, volatile, etc.
