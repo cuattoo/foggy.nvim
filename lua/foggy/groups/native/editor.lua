@@ -24,34 +24,34 @@ local groups = {
     -- TermCursor  = { }, -- cursor in a focused terminal
     -- TermCursorNC= { }, -- cursor in an unfocused terminal
 
-    ErrorMsg = { fg = C.error },                                        -- error messages on the command line
+    ErrorMsg = { fg = C.error },                                         -- error messages on the command line
 
-    VertSplit = { fg = C.border_fg },                                   -- the column separating vertically split windows
-    WinSeparator = { fg = C.border_fg, bg = C.border_bg },              -- the column separating vertically split windows
+    VertSplit = { fg = C.border_fg },                                    -- the column separating vertically split windows
+    WinSeparator = { fg = C.border_fg, bg = C.border_bg },               -- the column separating vertically split windows
 
-    Folded = { fg = C.fg_fold, bg = C.bg_fold },                        -- line used for closed folds
-    FoldColumn = { bg = C.bg_fold, fg = C.fg_fold },                    -- 'foldcolumn'
+    Folded = { fg = C.fg_fold, bg = C.bg_fold },                         -- line used for closed folds
+    FoldColumn = { bg = C.bg_fold, fg = C.fg_fold },                     -- 'foldcolumn'
 
-    SignColumn = { bg = C.bg_sidebar, fg = C.fg_sidebar },              -- column where |signs| are displayed
-    SignColumnSB = { bg = C.bg_sidebar, fg = C.fg_sidebar },            -- column where |signs| are displayed
+    SignColumn = { bg = C.bg_sidebar, fg = C.fg_sidebar },               -- column where |signs| are displayed
+    SignColumnSB = { bg = C.bg_sidebar, fg = C.fg_sidebar },             -- column where |signs| are displayed
 
-    Substitute = { bg = C.red.base, fg = C.bg_dark },                   -- |:substitute| replacement text highlighting
+    Substitute = { bg = C.red.base, fg = C.bg_dark },                    -- |:substitute| replacement text highlighting
 
-    LineNr = { fg = C.fg_sidebar },                                     -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr = { fg = C.fg_sidebar },                                      -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 
-    MatchParen = { underline = true, bold = true, sp = C.bghighlight }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen = { underline = true, bold = true, sp = C.bg_highlight }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 
-    ModeMsg = { fg = C.fg, bold = true },                               -- 'showmode' message (e.g., "-- INSERT -- ")
-    MsgArea = { fg = C.fg },                                            -- Area for messages and cmdline
+    ModeMsg = { fg = C.fg, bold = true },                                -- 'showmode' message (e.g., "-- INSERT -- ")
+    MsgArea = { fg = C.fg },                                             -- Area for messages and cmdline
     -- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg = { fg = C.blue.b1 },                                       -- |more-prompt|
-    NonText = { fg = C.gray.gyn1 },                                     -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    MoreMsg = { fg = C.blue.b1 },                                        -- |more-prompt|
+    NonText = { fg = C.gray.gyn1 },                                      -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 
-    Normal = { fg = C.fg, bg = C.bg },                                  -- normal text
-    NormalNC = { fg = C.fg, bg = C.bg },                                -- normal text in non-current windows
-    NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar },                -- normal text in sidebar
+    Normal = { fg = C.fg, bg = C.bg },                                   -- normal text
+    NormalNC = { fg = C.fg, bg = C.bg },                                 -- normal text in non-current windows
+    NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar },                 -- normal text in sidebar
 
-    NormalFloat = { fg = C.fg_float, bg = C.bg_float },                 -- Normal text in floating windows.
+    NormalFloat = { fg = C.fg_float, bg = C.bg_float },                  -- Normal text in floating windows.
     FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border },
     FloatTitle = { fg = C.yellow.base },
 
