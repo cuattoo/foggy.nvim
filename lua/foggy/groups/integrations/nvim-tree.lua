@@ -3,8 +3,8 @@ local O = require('foggy.config').options
 
 return {
 
-    NvimTreeNormal = { fg = C.fg, bg = C.bg },
-    NvimTreeNormalNC = { fg = C.fg, bg = C.bg },
+    NvimTreeNormal = { fg = C.fg },
+    NvimTreeNormalNC = { fg = C.fg },
 
     NvimTreeFolderName = { fg = C.fg_highlight },
     NvimTreeOpenedFolderName = { link = 'NvimTreeFolderName' },
@@ -14,10 +14,10 @@ return {
     NvimTreeSpecialFile = { link = 'NvimTreeFolderName' },
 
     NvimTreeRootFolder = { fg = C.gray.gy0 },
-    NvimTreeGitDirty = { fg = C.white.dim },
-    NvimTreeGitNew = { fg = C.gray.gy0 },
-    NvimTreeGitDeleted = { fg = C.gray.gy0 },
-    NvimTreeGitStaged = { fg = C.gray.gy0 },
+    NvimTreeGitDirty = { fg = C.git.change },
+    NvimTreeGitNew = { fg = C.git.add },
+    NvimTreeGitDeleted = { fg = C.git.delete },
+    NvimTreeGitStaged = { fg = C.fg.highlight },
     NvimTreeIndentMarker = { fg = C.bg_highlight },
 
 
