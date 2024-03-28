@@ -39,12 +39,12 @@ function C.extend_palette(style)
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
-    C.fg = C.white.bright
+    C.fg = C.white.dim
     C.fg_inactive = C.gray.dull1
     C.fg_hightlight = C.white.dim
-    C.fg_bright = C.white.dim
-    C.fg_dark = C.white.dim
-    C.fg_sidebar = C.white.dim
+    C.fg_bright = C.gray.hl2
+    C.fg_dark = C.black.normal
+    C.fg_sidebar = C.black.normal
     C.fg_fold = C.fg
     C.fg_selected = C.fg_bright
 
@@ -55,9 +55,9 @@ function C.extend_palette(style)
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
-    C.bg_float = U.blend(C.fg, C.bg, 0.5)
+    C.bg_float = C.bg_popup
     C.fg_float = C.fg
-    C.bg_float_border = C.bg_float
+    C.bg_float_border = C.bg_popup_border
     C.fg_float_border = C.border_fg
 
 
@@ -81,12 +81,11 @@ function C.extend_palette(style)
     C.warn = C.yellow.base
     C.warning = C.warn
     C.hint = C.green.bright
-    C.info = C.blue.b2
+    C.info = C.blue.base
 
     if O.transparent_bg then
         C.bg = C.none
         C.bg_dark = C.none
-        C.bg_highlight = U.blend(C.magenta.bright, C.gray.dull2, O.cursorline.blend)
         C.bg_sidebar = C.none
         C.bg_popup = C.none
         C.bg_statusline = C.none

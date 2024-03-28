@@ -223,7 +223,7 @@ colors = {
     },
 
     blue = {
-        base = "#30b0fe",
+        base = "#4da9ff",
         bright = "#5ec7ff", -- Brighter shade of blue
         soft = "#7fbfe7",   -- Softer shade of blue
         dim = "#1d87c2",    -- Dimmer shade of blue
