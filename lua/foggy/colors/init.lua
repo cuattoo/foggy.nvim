@@ -44,7 +44,7 @@ function C.extend_palette(style)
     C.fg_hightlight = C.white.dim
     C.fg_bright = C.gray.hl2
     C.fg_dark = C.black.normal
-    C.fg_sidebar = C.black.normal
+    C.fg_sidebar = C.bg_highlight
     C.fg_fold = C.fg
     C.fg_selected = C.fg_bright
 
@@ -73,7 +73,7 @@ function C.extend_palette(style)
     C.git = {
         add = C.green.base,
         delete = C.red.soft,
-        change = C.white.bright,
+        change = C.yellow.base,
     }
 
     -- Diagnostics
