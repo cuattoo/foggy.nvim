@@ -11,7 +11,7 @@ return {
     --- Misc
     ['@comment'] = { link = 'Comment' },
     ['@comment.documentation'] = { link = 'Comment' },
-    ['@operator'] = { fg = C.fg }, -- For any operator: `+`, but also `->` and `*` in C.
+    ['@operator'] = { link = 'Operator' }, -- For any operator: `+`, but also `->` and `*` in C.
 
     --- Punctuation
     ['@punctuation.delimiter'] = { link = '@operator' }, -- For delimiters ie: `.`
@@ -38,7 +38,7 @@ return {
     --- Types
     ['@type.builtin'] = { link = 'Type' },
     ['@field'] = { link = 'Field' }, -- For fields.
-    ['@property'] = { fg = C.yellow.enchanted },
+    ['@property'] = { link = 'Keyword' },
 
     --- Identifiers
     ['@variable'] = { link = 'Variable' },        -- Any variable name that does not have another highlight.

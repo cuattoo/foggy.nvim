@@ -35,7 +35,7 @@ local groups = {
     SignColumn = { bg = C.bg_sidebar, fg = C.fg_sidebar },               -- column where |signs| are displayed
     SignColumnSB = { bg = C.bg_sidebar, fg = C.fg_sidebar },             -- column where |signs| are displayed
 
-    Substitute = { bg = C.red.base, fg = C.bg_dark },                    -- |:substitute| replacement text highlighting
+    Substitute = { bg = C.red.base, fg = C.bg },                         -- |:substitute| replacement text highlighting
 
     LineNr = { fg = C.fg_sidebar },                                      -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 

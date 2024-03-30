@@ -33,7 +33,7 @@ return {
     Conditional = { link = 'Keyword' },                     --  if, then, else, endif, switch, etc.
     Repeat = { link = 'Keyword' },                          --   for, do, while, etc.
     Label = { link = 'Keyword' },                           --    case, default, etc.
-    Operator = { fg = C.fg },                               -- "sizeof", "+", "*", etc.
+    Operator = { link = 'Keyword' },                        -- "sizeof", "+", "*", etc.
 
     Macro = { fg = C.purple.bright },                       -- same as Define
     Exception = { link = 'Macro' },                         --  try, catch, throw
@@ -61,7 +61,7 @@ return {
     Italic = { italic = true },
 
     -- ("Ignore", below, may be invisible...)
-    Ignore = { fg = C.gray.dull2 },                  -- (preferred) left blank, hidden  |hl-Ignore|
+    Ignore = { fg = C.gray.g0 },                     -- (preferred) left blank, hidden  |hl-Ignore|
 
     Error = { fg = C.error },                        -- (preferred) any erroneous construct
     Todo = { bg = C.yellow.dim, fg = C.black.dark }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
@@ -94,7 +94,7 @@ return {
     ['@punctuation.special.markdown'] = { fg = C.orange.base, bold = true },
     ['@text.todo.unchecked'] = { fg = C.blue.b1 },  -- For brackets and parens.
     ['@text.todo.checked'] = { fg = C.green.base }, -- For brackets and parens.
-    ['@text.literal.markdown_inline'] = { bg = C.black.dark, fg = C.blue.b1 },
+    ['@text.literal.markdown_inline'] = { bg = C.cyan.base, fg = C.blue.b1 },
     ['@text.literal.markdown'] = { link = 'Normal' },
     ['helpCommand'] = { bg = C.black.dark, fg = C.blue.b1 },
 
