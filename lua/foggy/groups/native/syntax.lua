@@ -10,13 +10,13 @@ return {
     -- out groups should chain up to their "preferred" group by default.
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = C.yellow.enigma }, -- (preferred) any constant
-    Number = { link = 'Constant' },      --   a number constant: 234, 0xff
-    Boolean = { link = 'Number' },       --  a boolean constant: TRUE, false
-    Float = { link = 'Number' },         --    a floating point constant: 2.3e10
+    Constant = { fg = C.orange.base }, -- (preferred) any constant
+    Number = { link = 'Constant' },    --   a number constant: 234, 0xff
+    Boolean = { link = 'Number' },     --  a boolean constant: TRUE, false
+    Float = { link = 'Number' },       --    a floating point constant: 2.3e10
     None = { fg = C.none, bg = C.none },
-    String = { fg = C.gray.gyn1 },       --   a string constant: "this is a string"
-    Character = { fg = C.green.base },   --  a character constant: 'c', '\n'
+    String = { fg = C.gray.gyn1 },     --   a string constant: "this is a string"
+    Character = { fg = C.green.base }, --  a character constant: 'c', '\n'
     Variable = { fg = C.magenta.bright },
     Namespace = { fg = C.gray.hl0 },
     Field = { fg = C.gray.gyn2 },
@@ -42,7 +42,7 @@ return {
     Define = { fg = C.blue.base },                          --   preprocessor #define
     PreCondit = { link = 'Macro' },                         --  preprocessor #if, #else, #endif, etc.
 
-    Comment = { fg = C.gray.gd1, italic = O.italic_comments },
+    Comment = { fg = C.gray.g1, italic = O.italic_comments },
 
     Type = { fg = C.yellow.base },       -- (preferred) int, long, char, etc.
     StorageClass = { link = 'Keyword' }, -- static, register, volatile, etc.
@@ -75,7 +75,7 @@ return {
     htmlH2 = { fg = C.orange.base },
 
     Link = { fg = C.blue.b1, underline = true },
-    CodeBlock = { bg = C.black.medium, fg = C.fg },
+    CodeBlock = { bg = C.orange.base, fg = C.fg },
 
     mkdHeading = { link = 'htmlH1' },
     mkdCode = { link = 'CodeBlock' },
