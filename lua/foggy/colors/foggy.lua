@@ -193,6 +193,6 @@ colors = {
 }
 -- `white0` is used as the default fg, and has a blue tint.
 -- Reduce that amount of tint.
-if O.reduced_blue then palette.white0 = '#C0C8D8' end
+if O.reduced_blue then colors.blue.base = '#C0C8D8' end
 
 return colors
