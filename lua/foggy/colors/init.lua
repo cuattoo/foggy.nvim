@@ -39,7 +39,7 @@ function C.extend_palette(style)
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
-    C.fg = C.gray.hl1
+    C.fg = C.gray.dull2
     C.fg_inactive = C.gray.dull1
     C.fg_hightlight = C.gray.gy2
     C.fg_bright = C.gray.hl2
