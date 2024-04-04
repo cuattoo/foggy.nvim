@@ -24,8 +24,8 @@ function C.extend_palette(style)
 
     -- Backgrounds
     C.bg = C.gray.g0
-    C.bg_dark = C.black.medium
-    C.bg_inactive = C.black.normal
+    C.bg_dark = C.black.normal
+    C.bg_inactive = C.black.medium
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = C.bg
@@ -63,8 +63,8 @@ function C.extend_palette(style)
 
     -- Diffs
     C.diff = {
-        change0 = U.blend(C.white.dim, C.bg, 0.05),
-        change1 = U.blend(C.white.dim, C.bg, diff_blend),
+        change0 = U.blend(C.white.normal, C.bg, 0.05),
+        change1 = U.blend(C.white.dark, C.bg, diff_blend),
         add = U.blend(C.green.base, C.bg, diff_blend),
         delete = U.blend(C.red.soft, C.bg, diff_blend),
     }

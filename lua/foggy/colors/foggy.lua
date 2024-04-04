@@ -21,125 +21,26 @@ local root = {
     rosewater = '#d799ae', -- Pale pinky red, used for comments and statusline
     telescope = '#8ec07c', -- Grass green, used for Telescope UI elements
 }
-local palette = {
-    none = 'NONE',
-    black = {
-        -- Blacks. Not in base Nord.
-        b0 = '#191D24',
-        b1 = '#1E222A',
-        -- Slightly darker than bg.  Very useful for certain popups
-        b2 = '#222630',
-    },
-    root,
-
-    -- Grays
-    -- This color is used on their website's dark theme
-    gray = {
-        g0 = '#242933', -- kitty bg
-        -- Polar Night
-        g1 = '#2E3440', -- nvim bg
-        g2 = '#3B4252',
-        g3 = '#434C5E',
-        g4 = '#4C566A',
-        -- A light blue/gray.
-        -- From @nightfox.nvim.
-        g5 = '#60728A',
-        gy1 = '#444B56', -- Brightened g1 slightly.
-        gy2 = '#4E5869', -- Darkened version of g2.
-        gy3 = '#576173', -- Even darker version of g3.
-        gy4 = '#616B7C', -- Darkest among these new ones, close to g4.
-
-        -- Lilac-Yellow Gray
-        ligy0 = '#455367', -- Desaturation of gy1, adding a hint of yellow.
-        ligy1 = '#505D71', -- Blended version of g2 & gy2.
-        ligy2 = '#59687B', -- Similar blend of g3 & gy3.
-        ligy3 = '#637083', -- Closest match to gy4.
-
-        -- Pure Yellow-Green Gray Mixtures
-        ygg0 = '#829DA8', -- Blend of y2 & gy2.
-        ygg1 = '#9BBDC8', -- Blend of y1 & gy1, softer transition.
-        ygg2 = '#ADDCE5', -- Blend of y0 & gy1, very pale green.
-
-        -- light versions of grey.
-        foggy = '#898989',
-        taupe = '#7F7F7F',
-        fawn = '#A3A3A3',
-        mocha = '#B5B5B5',
-        latte = '#C7C7C7',
-    },
-    -- Dim white
-    white = {
-        default = '#BBC3D4',
-        antique = '#fbf1ed',
-        -- snow storm
-        snow1 = '#D8DEE9',
-        snow2 = '#E5E9F0',
-        snow3 = '#ECEFF4',
-    },
-    blue = {
-        base = '#30b0fe',
-        -- Frost
-        b0 = '#5E81AC',
-        b1 = '#81A1C1',
-        b2 = '#88C0D0',
-        b4 = '#d1f2f7',
-    },
-    cyan = {
-        base = '#8FBCBB',
-        bright = '#9FC6C5',
-        dim = '#80B3B2',
-    },
-    -- Aurora
-    -- These colors are used a lot, so we need variations for them
-    -- Base colors are from original Nord palette
-    red = {
-        base = '#BF616A',
-        bright = '#C5727A',
-        soft = '#eebebe', -- added
-        dim = '#B74E58',
-    },
-    orange = {
-        base = '#D08770',
-        bright = '#D79784',
-        soft = '#edc0ae', -- added
-        dim = '#CB775D',
-    },
-    yellow = {
-        base = '#EBCB8B',
-        bright = '#EFD49F',
-        enigma = '#D1be9E', -- added
-        dim = '#E7C173',
-        y0 = '#DCAF43',     -- Same as g5, but slightly brightened and turned into yellow.
-        y1 = '#ECC067',     -- Little bit darker, still closer to yellow.
-        y2 = '#FFDE95',     -- Lighter yet, keeping yellowy tint.
-        y3 = '#FFFACB',     -- Very pale yellow.
-        dy0 = '#CBAA58',    -- Slightly less yellow than y0, also slightly dimmed.
-        dy1 = '#BE963C',    -- Darker, almost orange-yellow now.
-        dy2 = '#AE8326',    -- More intense, turns into golden yellow.
-        dark = '#23231F',   -- added
-    },
-    green = {
-        base = '#A3BE8C',
-        bright = '#B1C89D',
-        dim = '#97B67C',
-    },
-    magenta = {
-        base = '#B48EAD',
-        bright = '#BE9DB8',
-        dim = '#A97EA1',
-    },
-    xterm = {
-        white = '#eeeeee',
-        grey = '#808080',
-    },
-}
 colors = {
     black = {
-        darkest = "#0f111b",
-        darker = "#141620",
-        dark = "#191b25",
-        medium = "#202330",
-        normal = "#262834",
+        darkest = "#050505",  -- Darkest shade, almost pure black
+        darker = "#0a0a0a",   -- Slightly lighter than the darkest shade
+        dark = "#111111",     -- Dark shade with a hint of warmth
+        medium = "#1c1c1c",   -- Medium shade, balanced between darkness and visibility
+        normal = "#262626",   -- Standard black, slightly lighter for readability
+        light = "#303231",    -- Lighter shade, providing contrast to medium black
+        lighter = "#404041",  -- Even lighter shade, aligning with the normal shade
+        lightest = "#505051", -- Lightest shade, adding brightness to the design
+    },
+
+    white = {
+        lightest = "#FFFFFF", -- Lightest shade, pure white
+        lighter = "#F5F5F5",  -- Slightly lighter shade
+        light = "#F0F0F0",    -- Light shade
+        normal = "#E0E0E0",   -- Standard white shade
+        dark = "#D5D5D5",     -- Slightly lighter dark white shade
+        darker = "#CCCCCC",   -- Even lighter dark white shade
+        darkest = "#BFBFBF",  -- Darkest white shade
     },
 
     gray = {
@@ -213,13 +114,6 @@ colors = {
         hygg1 = "#A6BCD2",
         hygg2 = "#B9D1E1",
         hygg3 = "#CDF6F3",
-    },
-    white = {
-        base = "#FFFFFF",   -- Standard RGB representation
-
-        dim = "#F7F7F7",    -- Diminished brightness but retained sufficient contrast for reading comfortably
-        bright = "#F2F8FC", -- Brightens the standard white for optimal visibility against dark themes
-        soft = "#F5F5F5",   -- Further reduction in contrast compared to 'base' (still legible against most backgrounds)o
     },
 
     blue = {

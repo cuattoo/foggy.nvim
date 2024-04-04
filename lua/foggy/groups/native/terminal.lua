@@ -23,6 +23,6 @@ return {
     terminal_color_6 = C.cyan.base,
     terminal_color_14 = C.cyan.bright,
 
-    terminal_color_7 = C.white.dim,
-    terminal_color_15 = C.white.bright,
+    terminal_color_7 = C.white.dark,
+    terminal_color_15 = C.white.normal,
 }

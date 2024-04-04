@@ -13,15 +13,15 @@ local groups = {
     TelescopeSelection = { bg = C.bg, fg = C.yellow.bright, bold = false },
     TelescopeSelectionCaret = { fg = C.yellow.bright, bg = C.bg, bold = true },
 
-    TelescopePreviewTitle = { fg = C.white.base, bg = C.bg, bold = true },
-    TelescopeResultsTitle = { fg = C.white.base, bg = C.bg, bold = true },
-    TelescopePromptTitle = { fg = C.white.base, bg = C.bg, bold = true },
-    TelescopeTitle = { fg = C.white.base, bg = C.bg, bold = true },
+    TelescopePreviewTitle = { fg = C.white.normal, bg = C.bg, bold = true },
+    TelescopeResultsTitle = { fg = C.white.normal, bg = C.bg, bold = true },
+    TelescopePromptTitle = { fg = C.white.normal, bg = C.bg, bold = true },
+    TelescopeTitle = { fg = C.white.normal, bg = C.bg, bold = true },
 
-    TelescopeBorder = { fg = C.white.base, bg = C.bg },
-    TelescopePromptBorder = { fg = C.white.base, bg = C.bg },
-    TelescopeResultsBorder = { fg = C.white.base, bg = C.bg },
-    TelescopePreviewBorder = { fg = C.white.base, bg = C.bg },
+    TelescopeBorder = { fg = C.white.normal, bg = C.bg },
+    TelescopePromptBorder = { fg = C.white.normal, bg = C.bg },
+    TelescopeResultsBorder = { fg = C.white.normal, bg = C.bg },
+    TelescopePreviewBorder = { fg = C.white.normal, bg = C.bg },
 
     TelescopeMatching = { bold = true },
     TelescopePromptPrefix = { bg = C.bg, fg = C.orange.bright },

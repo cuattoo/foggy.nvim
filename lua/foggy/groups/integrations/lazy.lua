@@ -3,7 +3,7 @@ local C = require 'foggy.colors'
 return {
     LazyH1 = { fg = C.yellow.base, bold = true },
     LazyButtonActive = { link = 'LazyH1' },
-    LazyButton = { fg = C.white.dim },
+    LazyButton = { fg = C.white.normal },
     LazySpecial = { fg = C.yellow.base },
 
     LazyProgressDone = { fg = C.green.bright },
