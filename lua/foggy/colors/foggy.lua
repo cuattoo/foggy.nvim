@@ -23,24 +23,25 @@ local root = {
 }
 colors = {
     black = {
-        darkest = "#050505",  -- Darkest shade, almost pure black
-        darker = "#0a0a0a",   -- Slightly lighter than the darkest shade
-        dark = "#111111",     -- Dark shade with a hint of warmth
-        medium = "#1c1c1c",   -- Medium shade, balanced between darkness and visibility
-        normal = "#262626",   -- Standard black, slightly lighter for readability
-        light = "#303231",    -- Lighter shade, providing contrast to medium black
-        lighter = "#404041",  -- Even lighter shade, aligning with the normal shade
-        lightest = "#505051", -- Lightest shade, adding brightness to the design
+        darkest = "#18191b", -- A deep, rich black with subtle hints of charcoal
+        darker = "#1c1d1f",  -- Slightly cooler tone with a hint of midnight blue
+        dark = "#212326",    -- Bold and robust, with a touch more brightness in blue
+        medium = "#28292c",  -- A sophisticated charcoal with a touch of smokiness
+        normal = "#303136",  -- Classic black with a subtle sheen, perfect for elegance
+        light = "#37383b",   -- Adjusted based on 4% difference from normal
+        lighter = "#3f4043", -- Adjusted based on 4% difference from normal
+        lightest = "#46474a" -- Adjusted based on 4% difference from normal
     },
 
     white = {
-        lightest = "#FFFFFF", -- Lightest shade, pure white
-        lighter = "#F5F5F5",  -- Slightly lighter shade
-        light = "#F0F0F0",    -- Light shade
-        normal = "#E0E0E0",   -- Standard white shade
-        dark = "#D5D5D5",     -- Slightly lighter dark white shade
-        darker = "#CCCCCC",   -- Even lighter dark white shade
-        darkest = "#BFBFBF",  -- Darkest white shade
+        lightest = "#ffffff", -- Pure white
+        lighter = "#f0f0f0",  -- A bright and clear white
+        light = "#e0e0e0",    -- A softer, creamier white
+        normal = "#d0d0d0",   -- A standard neutral white
+        medium = "#c0c0c0",   -- A slightly darker shade of white
+        dark = "#b0b0b0",     -- A light gray with white undertones
+        darker = "#a0a0a0",   -- A medium gray with white undertones
+        darkest = "#909090"   -- A dark gray with white undertones
     },
 
     gray = {
