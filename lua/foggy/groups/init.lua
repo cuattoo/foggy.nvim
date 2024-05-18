@@ -58,11 +58,9 @@ function M.set_term_colors()
 end
 
 function M.get_styles()
-    local groups = {}
-    for _, other in ipairs(M.styels) do
-        groups = merge(groups, require('foggy.groups.styles.' .. other))
+    for _, style in ipairs(M.styles) do
+        require('foggy.groups.styles.' .. style)
     end
-    return groups
 end
 
 return M
