@@ -35,7 +35,7 @@ M.native = {
     'lsp',
 }
 
-M.other = {
+M.styles = {
     'dev-icons'
 }
 
