@@ -1,4 +1,4 @@
-local C = require("foggy.colors.foggy")
+local C = require("foggy.colors")
 
 require('devicon-colorscheme').setup {
     colors = {
