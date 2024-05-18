@@ -2,15 +2,15 @@ local C = require("colors.foggy")
 
 require('devicon-colorscheme').setup {
     colors = {
-        blue = C.blue.bright,
-        cyan = C.cyan.bright,
-        green = C.green.bright,
-        magenta = C.pink.bright,
-        orange = C.orange.bright,
-        purple = C.purple.bright,
-        red = C.red.bright,
+        blue = C.blue.base,
+        cyan = C.cyan.base,
+        green = C.green.base,
+        magenta = C.pink.base,
+        orange = C.orange.base,
+        purple = C.purple.base,
+        red = C.red.base,
         white = C.white.normal,
-        yellow = C.yellow.bright,
+        yellow = C.yellow.base,
         bright_blue = C.blue.soft,
         bright_cyan = C.cyan.soft,
         bright_green = C.green.soft,
