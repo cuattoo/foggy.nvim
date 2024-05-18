@@ -154,7 +154,7 @@ colors = {
         base = "#ebcb8b",
         bright = "#efd49f",
         enchanted = "#d7bd72",
-        soft = "#f4eed8",
+        soft = "#f8e9bb",
         dim = "#ddb36a",
     },
 
@@ -191,6 +191,12 @@ colors = {
         soft = "#dcbca5",
         dim = "#7e5747",
     },
+    pink = {
+        base = "#ff6f91",
+        bright = "#ff85a1",
+        soft = "#ff9bb1",
+        dim = "#e6607e",
+    }
 }
 -- `white0` is used as the default fg, and has a blue tint.
 -- Reduce that amount of tint.

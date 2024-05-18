@@ -6,6 +6,8 @@ local M = {}
 M.integrations = {
     'nvim-dap-ui',
     'nvim-dap',
+    'nvim-notify',
+    'dev-icons',
     'dashboard',
     'indent-blankline',
     'lspsaga',
@@ -19,7 +21,6 @@ M.integrations = {
     'leap',
     'diffview',
     'nvim-cmp',
-    'nvim-notify',
     'vimtex',
     'noice',
     'lazy',
