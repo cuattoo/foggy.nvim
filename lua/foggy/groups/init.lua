@@ -7,7 +7,6 @@ M.integrations = {
     'nvim-dap-ui',
     'nvim-dap',
     'nvim-notify',
-    'dev-icons',
     'dashboard',
     'indent-blankline',
     'lspsaga',
@@ -58,9 +57,11 @@ function M.set_term_colors()
 end
 
 function M.get_styles()
+    local groups = {}
     for _, style in ipairs(M.styles) do
-        require('foggy.groups.styles.' .. style)
+        groups = merge(groups, require('foggy.groups.styles.' .. style))
     end
+    return groups
 end
 
 return M
