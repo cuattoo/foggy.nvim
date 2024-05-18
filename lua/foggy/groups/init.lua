@@ -35,6 +35,10 @@ M.native = {
     'lsp',
 }
 
+M.other = {
+    'dev-icons'
+}
+
 function M.get_groups()
     local groups = {}
     for _, native in ipairs(M.native) do
@@ -51,6 +55,14 @@ function M.set_term_colors()
     for term, col in pairs(colors) do
         vim.g[term] = col
     end
+end
+
+function M.get_styles()
+    local groups = {}
+    for _, other in ipairs(M.styels) do
+        groups = merge(groups, require('foggy.groups.styles.' .. other))
+    end
+    return groups
 end
 
 return M
