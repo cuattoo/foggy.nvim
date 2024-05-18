@@ -196,7 +196,7 @@ colors = {
         bright = "#ff85a1",
         soft = "#ff9bb1",
         dim = "#e6607e",
-    }
+    },
 }
 -- `white0` is used as the default fg, and has a blue tint.
 -- Reduce that amount of tint.
