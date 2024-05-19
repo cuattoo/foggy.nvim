@@ -4,7 +4,7 @@ local foggy = {}
 
 foggy.normal = {
     a = { bg = C.orange.base, fg = C.black.dark, gui = 'bold' },
-    b = { bg = C.bg, fg = C.gray.dull3 },
+    b = { bg = C.bg, fg = C.gray.dull1 },
     c = { bg = C.bg_statusline, fg = C.white.normal },
 }
 

@@ -20,8 +20,23 @@ local root = {
 
     rosewater = '#d799ae', -- Pale pinky red, used for comments and statusline
     telescope = '#8ec07c', -- Grass green, used for Telescope UI elements
+
+    white = {
+        base = "#F5F5DC",   -- Base old paper-like color
+        bright = "#FFFFF0", -- Brighter shade, resembling cleaner paper
+        soft = "#FAF0E6",   -- Soft, muted white for a gentle look
+        dim = "#EEE8AA",    -- Dim, yellowish tone for an aged paper effect
+    },
+    black = {
+        base = "#000000",   -- Base deep black color
+        bright = "#1C1C1C", -- Brighter shade of black
+        soft = "#363636",   -- Soft, charcoal-like black
+        dim = "#4F4F4F",    -- Dim, faded black for a vintage look
+    }
+
 }
 colors = {
+    root,
     black = {
         darkest = "#18191b", -- A deep, rich black with subtle hints of charcoal
         darker = "#1c1d1f",  -- Slightly cooler tone with a hint of midnight blue
