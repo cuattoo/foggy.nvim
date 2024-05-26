@@ -9,25 +9,25 @@ foggy.normal = {
 }
 
 foggy.insert = {
-	a = { bg = C.green.bright, fg = C.black.dark, gui = 'bold' },
+	a = { bg = C.green.base, fg = C.black.dark, gui = 'bold' },
 	b = { bg = C.bg, fg = C.white.medium },
 	c = { bg = C.bg_statusline, fg = C.white.medium },
 }
 
 foggy.command = {
-	a = { bg = C.cyan.bright, fg = C.black.dark, gui = 'bold' },
+	a = { bg = C.cyan.base, fg = C.black.dark, gui = 'bold' },
 	b = { bg = C.bg, fg = C.white.medium },
 	c = { bg = C.bg_statusline, fg = C.white.medium },
 }
 
 foggy.visual = {
-	a = { bg = C.red.bright, fg = C.black.dark, gui = 'bold' },
+	a = { bg = C.red.base, fg = C.black.dark, gui = 'bold' },
 	b = { bg = C.bg, fg = C.white.medium },
 	c = { bg = C.bg_statusline, fg = C.white.medium },
 }
 
 foggy.replace = {
-	a = { bg = C.magenta.bright, fg = C.black.dark, gui = 'bold' },
+	a = { bg = C.magenta.base, fg = C.black.dark, gui = 'bold' },
 	b = { bg = C.bg, fg = C.white.medium },
 	c = { bg = C.bg_statusline, fg = C.white.medium },
 }
