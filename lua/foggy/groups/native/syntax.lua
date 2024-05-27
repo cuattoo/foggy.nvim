@@ -26,7 +26,7 @@ return {
     Builtin = { fg = C.red.rust },
 
     Identifier = { fg = C.gray.gyn1 },                      -- (preferred) any variable name
-    Function = { fg = C.magenta.bright },                   -- function name (also: methods for classes)
+    Function = { fg = C.magenta.base },                   -- function name (also: methods for classes)
 
     Keyword = { fg = C.gray.gyn1, bold = O.bold_keywords }, --  any other keyword
     Statement = { link = 'Keyword' },                       -- (preferred) any statement
@@ -35,7 +35,7 @@ return {
     Label = { link = 'Keyword' },                           --    case, default, etc.
     Operator = { link = 'Keyword' },                        -- "sizeof", "+", "*", etc.
 
-    Macro = { fg = C.purple.bright },                       -- same as Define
+    Macro = { fg = C.purple.base },                       -- same as Define
     Exception = { link = 'Macro' },                         --  try, catch, throw
     PreProc = { link = 'Macro' },                           -- (preferred) generic preprocessor
     Include = { fg = C.blue.base },                         --  preprocessor #include
@@ -49,7 +49,7 @@ return {
     Structure = { link = 'Type' },       --  struct, union, enum, etc.
     Typedef = { link = 'Type' },         --  A typedef
 
-    Special = { fg = C.blue.b1 },        -- (preferred) any special symbol
+    Special = { fg = C.blue.base },        -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
     -- Delimiter     = { }, --  character that needs attention
@@ -65,11 +65,11 @@ return {
 
     Error = { fg = C.error },                        -- (preferred) any erroneous construct
     Todo = { bg = C.yellow.dim, fg = C.black.dark }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-    Note = { fg = C.black.b0, bg = C.info },
+    Note = { fg = C.black.light, bg = C.info },
 
     -- What are these?
     qfLineNr = { fg = C.gray.gy0 },
-    qfFileName = { fg = C.blue.b1 },
+    qfFileName = { fg = C.blue.base },
 
     htmlH1 = { fg = C.yellow.base, bold = true },
     htmlH2 = { fg = C.orange.base },

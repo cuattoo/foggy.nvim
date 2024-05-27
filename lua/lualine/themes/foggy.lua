@@ -16,7 +16,7 @@ foggy.insert = {
 
 foggy.command = {
 	a = { bg = C.cyan.base, fg = C.black.dark, gui = 'bold' },
-	b = { bg = C.bg, fg = C.white.medium },
+	b = { bg = C.bg, g = C.white.medium },
 	c = { bg = C.bg_statusline, fg = C.white.medium },
 }
 
