@@ -49,12 +49,12 @@ function M.get_groups()
     return merge(groups, C.options.override)
 end
 
-function M.set_term_colors()
-    local colors = require 'foggy.groups.native.terminal'
-    for term, col in pairs(colors) do
-        vim.g[term] = col
-    end
-end
+--function M.set_term_colors()
+--    local colors = require 'foggy.groups.native.terminal'
+--    for term, col in pairs(colors) do
+--        vim.g[term] = col
+--    end
+--end
 
 
 function M.get_styles()
