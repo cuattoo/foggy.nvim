@@ -9,7 +9,7 @@ If there is anything that does not seem right, even if it is a very small highli
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'cuattoo/arcdic.nvim'
+use 'cuattoo/foggy.nvim'
 ```
 
 With [lazy.nvim](https://github.com/folke/lazy.nvim):
