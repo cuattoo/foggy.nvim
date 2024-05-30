@@ -17,8 +17,9 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 {
     'cuattoo/foggy.nvim',
+    branch = 'main',
     lazy = false,
-    priority = 1000,
+    priority = 999,
     config = function()
         require 'foggy' .load()
     end
