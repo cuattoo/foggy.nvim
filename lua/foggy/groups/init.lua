@@ -37,7 +37,9 @@ M.native = {
 M.styles = {
     'dev-icons'
 }
+
 merge(M.styles, M.integrations)
+
 function M.get_groups()
     local groups = {}
     for _, native in ipairs(M.native) do
