@@ -20,8 +20,8 @@ function M.load(opts)
 end
 
 -- Add command to nvim
-vim.api.nvim_create_user_command('Foggy', function(_)
-    vim.api.nvim_command 'colorscheme Foggy'
+vim.api.nvim_create_user_command('ImperialIllumination', function(_)
+    vim.api.nvim_command 'colorscheme ImperialIlumination'
 end, {
     nargs = 1,
 })
