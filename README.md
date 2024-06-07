@@ -1,4 +1,4 @@
-# imperialIllumination.nvim
+# ImperialIllumination.nvim
 
 A Neovim colorscheme based on [Nord](https://www.nordtheme.com/), but in lighter colors. The idea behind this colorscheme is to use Nord, but add some lighter colors and use Aurora more prominently than Nord themes usually do. This ends up creating a colorscheme that is soft on the eyes in the light.
 
@@ -9,19 +9,19 @@ If there is anything that does not seem right, even if it is a very small highli
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'cuattoo/imperialIllumination.nvim'
+use 'cuattoo/ImperialIllumination.nvim'
 ```
 
 With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-    'cuattoo/imperialIllumination.nvim',
+    'cuattoo/ImperialIllumination.nvim',
     branch = 'main',
     lazy = false,
     priority = 999,
     config = function()
-        require 'imperialIllumination' .load()
+        require 'ImperialIllumination' .load()
     end
 }
 ```
@@ -29,7 +29,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 With [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'cuattoo/imperialIllumination.nvim', { 'branch': 'main' }
+Plug 'cuattoo/ImperialIllumination.nvim', { 'branch': 'main' }
 ```
 
 # 🚀 Usage
@@ -37,15 +37,15 @@ Plug 'cuattoo/imperialIllumination.nvim', { 'branch': 'main' }
 Using vim:
 
 ```vim
-colorscheme imperialIllumination
+colorscheme ImperialIllumination
 ```
 
 Using lua:
 
 ```lua
-vim.cmd.colorscheme 'imperialIllumination'
+vim.cmd.colorscheme 'ImperialIllumination'
 -- or
-require 'imperialIllumination' .load()
+require 'ImperialIllumination' .load()
 ```
 
 Using with lualine:
@@ -53,7 +53,7 @@ Using with lualine:
 ```lua
 require 'lualine' .setup {
     options = {
-        theme = 'imperialIllumination'
+        theme = 'ImperialIllumination'
     }
 }
 ```
@@ -61,7 +61,7 @@ require 'lualine' .setup {
 To get the palette in lua:
 
 ```lua
-local palette = require 'imperialIllumination.colors'
+local palette = require 'ImperialIllumination.colors'
 ```
 
 # ⚙️ Configuration
@@ -69,7 +69,7 @@ local palette = require 'imperialIllumination.colors'
 Foggy will use the default values, unless `setup` is called. Below is the default configuration.
 
 ```lua
-require 'imperialIllumination' .setup {
+require 'ImperialIllumination' .setup {
     -- This callback can be used to override the colors used in the palette.
     on_palette = function(palette) return palette end,
 
@@ -122,8 +122,8 @@ require 'imperialIllumination' .setup {
 An example of overriding the `TelescopePromptTitle` colors:
 
 ```lua
-local palette = require 'imperialIllumination.colors'
-require 'imperialIllumination' .setup {
+local palette = require 'ImperialIllumination.colors'
+require 'ImperialIllumination' .setup {
     override = {
         TelescopePromptTitle = {
             fg = palette.red.bright,
