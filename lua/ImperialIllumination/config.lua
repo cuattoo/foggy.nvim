@@ -13,7 +13,7 @@ local defaults = {
     },
 
     -- Available styles dark, lighter, ImperialIllumination
-    theme = "dark",
+    theme = "", -- radiance, TODO
 
     -- Enable bold keywords.
     bold_keywords = false,

@@ -35,7 +35,7 @@ return {
     Label = { link = 'Keyword' },                           --    case, default, etc.
     Operator = { link = 'Keyword' },                        -- "sizeof", "+", "*", etc.
 
-    Macro = { fg = C.purple.base },                       -- same as Define
+    Macro = { fg = C.green.base },                       -- same as Define
     Exception = { link = 'Macro' },                         --  try, catch, throw
     PreProc = { link = 'Macro' },                           -- (preferred) generic preprocessor
     Include = { fg = C.blue.base },                         --  preprocessor #include
@@ -64,7 +64,7 @@ return {
     Ignore = { fg = C.gray.g0 },                     -- (preferred) left blank, hidden  |hl-Ignore|
 
     Error = { fg = C.error },                        -- (preferred) any erroneous construct
-    Todo = { bg = C.yellow.dim, fg = C.black.dark }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { fg = C.yellow.base }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Note = { fg = C.black.light, bg = C.info },
 
     -- What are these?

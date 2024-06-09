@@ -92,36 +92,10 @@ function C.extend_palette(style)
         C.bg_selected = U.blend(C.gray.dull1, C.black.dark, 0.4)
     end
 
-
-    -- TODO
-    -- if style == "ImperialIllumination" then
-    --     C.bg = (O.transparent_bg and C.none) or C.gray.hl2
-    --     C.bg_dark = (O.transparent_bg and C.none) or C.hl0
-    --     C.bg_highlight = (O.transparent_bg and C.xterm.grey) or C.white.dim
-    --         U.blend(C.magenta.bright, C.xterm.grey, O.cursorline.blend)
-    --     C.bg_visual = C.bg_highlight
-    --     C.bg_sidebar = (O.transparent_bg and C.none) or C.bg
-    --     C.bg_popup = (O.transparent_bg and C.none) or C.bg
-    --     C.bg_statusline = C.bg_dark
-    --     C.bg_selected = U.blend(C.gray.g2, C.black.b0, 0.4)
-    --     C.bg_fold = C.gray.g2
-    --     C.fg = C.white.snow1
-    --     C.fg_inactive = (O.transparent_bg and C.gray.ImperialIllumination) or C.white.default
-    --     C.fg_hightlight = (O.transparent_bg and O.bg_highlight and C.white.snow1) or C.white.default
-    --     C.fg_bright = C.white.snow2
-    --     C.fg_dark = C.white.default
-    --     C.fg_sidebar = C.white.default
-    --     C.fg_fold = C.fg
-    --     C.fg_selected = C.fg_bright
-    --     C.bg_popup = C.bg
-    --     C.fg_popup = C.fg
-    --     C.bg_popup_border = C.bg
-    --     C.fg_popup_border = C.border_fg
-    --     C.bg_float = (C.bg and C.gray.ImperialIllumination) or C.white.default
-    --     C.fg_float = C.fg
-    --     C.bg_float_border = C.bg_float
-    --     C.fg_float_border = C.border_fg
-    -- end
+    if O.theme == "radiance" then
+	    C.bg = C.black.darker
+	    -- TODO
+    end
 
     -- Cursorline
     if O.cursorline.theme == 'light' then
