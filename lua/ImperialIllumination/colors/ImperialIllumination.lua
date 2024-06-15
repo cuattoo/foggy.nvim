@@ -3,7 +3,7 @@
 
 local O = require('ImperialIllumination.config').options
 local colors = {
-    fruit = {
+   fruit = {
         elvenberry = "#7A3A58",
         crystalmelon = "#65C3C5",
         stardustapple = "#B14FB6",
@@ -101,7 +101,7 @@ local colors = {
         hygg3 = "#CDF6F3"
     },
     blue = {
-        base = "#3b5d7d",
+        base = "#003a85",
         bright = "#5282a6",
         soft = "#6ba6cf",
         dim = "#2f4e6a",
@@ -109,51 +109,51 @@ local colors = {
         phantom = "#364e7b",
         abyss = "#00216d"
     },
-cyan = {
-    base = "#5A8D8C",
-    bright = "#7BBEBD",
-    soft = "#A2E1E0",
-    dim = "#468483",
-    glacier = "#008775",
-    oceanic = "#007067",
-    celestial = "#006056"
-},
+    cyan = {
+        base = "#006056",
+        bright = "#7BBEBD",
+        soft = "#A2E1E0",
+        dim = "#468483",
+        glacier = "#008775",
+        oceanic = "#007067",
+        celestial = "#006056"
+    },
     red = {
-    base = "#D86F7A",
-    bright = "#F08C95",
-    soft = "#FFA8B1",
-    dim = "#B85C68",
-    volcano = "#FF6666",
-    dragonfruit = "#FF8080",
-    mars = "#B24C55"
-},
-orange = {
-    base = "#E79E70",
-    bright = "#FFBEA6",
-    soft = "#FFDABF",
-    dim = "#D8A27A",
-    emberglow = "#E3866F",
-    pumpkin = "#FFA672",
-    tawny = "#C78556"
-},
-yellow = {
-    base = "#C4A06B",
-    bright = "#E8BF8A",
-    enchanted = "#F4D8A2",
-    soft = "#F1CFA5",
-    honey = "#D6A763",
-    goldenrod = "#F0C378",
-    daffodil = "#E0B755"
-},
-green = {
-    base = "#6BA46B",
-    bright = "#8BBC8B",
-    soft = "#A8D5A8",
-    dim = "#567A56",
-    emerald = "#00A550",
-    moss = "#3B7A3B",
-    sage = "#689E68"
-},
+        base = "#B24C55",
+        bright = "#F08C95",
+        soft = "#FFA8B1",
+        dim = "#B85C68",
+        volcano = "#FF6666",
+        dragonfruit = "#FF8080",
+        mars = "#B24C55"
+    },
+    orange = {
+        base = "#E3866F",
+        bright = "#FFBEA6",
+        soft = "#FFDABF",
+        dim = "#D8A27A",
+        emberglow = "#E3866F",
+        pumpkin = "#FFA672",
+        tawny = "#C78556"
+    },
+    yellow = {
+        base = "#D6A763",
+        bright = "#E8BF8A",
+        enchanted = "#F4D8A2",
+        soft = "#F1CFA5",
+        honey = "#D6A763",
+        goldenrod = "#F0C378",
+        daffodil = "#E0B755"
+    },
+    green = {
+        base = "#689E68",
+        bright = "#8BBC8B",
+        soft = "#A8D5A8",
+        dim = "#567A56",
+        emerald = "#00A550",
+        moss = "#3B7A3B",
+        sage = "#689E68"
+    },
     magenta = {
         base = "#855b85",
         bright = "#a278a2",
@@ -164,7 +164,7 @@ green = {
         fairyfloss = "#c960a6"
     },
     purple = {
-        base = "#674f6d",
+        base = "#6c5d77",
         bright = "#87699b",
         soft = "#b898cf",
         dim = "#6f5875",
@@ -173,7 +173,7 @@ green = {
         royalty = "#8e7b93"
     },
     teal = {
-        base = "#385c5e",
+        base = "#325a5c",
         bright = "#508285",
         soft = "#6db1b3",
         dim = "#325a5c",
@@ -182,7 +182,7 @@ green = {
         nebula = "#007b78"
     },
     brown = {
-        base = "#6a503a",
+        base = "#6e412b",
         bright = "#88694d",
         soft = "#b39e82",
         dim = "#694f37",
@@ -191,7 +191,7 @@ green = {
         burntsienna = "#8c6041"
     },
     pink = {
-        base = "#8d6075",
+        base = "#8e5971",
         bright = "#ae7b8e",
         soft = "#dfadc5",
         dim = "#8e5971",
