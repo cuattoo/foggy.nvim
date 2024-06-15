@@ -16,7 +16,7 @@ ImperialIllumination.insert = {
 
 ImperialIllumination.command = {
 	a = { bg = C.cyan.base, fg = C.black.dark, gui = 'bold' },
-	b = { bg = C.bg, g = C.black.lightest },
+	b = { bg = C.bg, fg = C.black.lightest },
 	c = { bg = C.bg_statusline, fg = C.black.lightest },
 }
 

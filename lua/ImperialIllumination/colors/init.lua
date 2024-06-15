@@ -24,8 +24,8 @@ function C.extend_palette(style)
 
     -- Backgrounds
     C.bg = C.black.medium
-    C.bg_dark = C.black.dark
-    C.bg_inactive = C.black.dark
+    C.bg_dark = C.black.darker
+    C.bg_inactive = C.black.normal
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = C.bg
