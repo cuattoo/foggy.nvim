@@ -18,6 +18,7 @@ function C.extend_palette(style)
         C.black.dark = C.gray.dull0
     end
 
+    C.none = "NONE"
 
     -- Define some use cases.
     -- Some of the format is from @folke/tokyonight.nvim.

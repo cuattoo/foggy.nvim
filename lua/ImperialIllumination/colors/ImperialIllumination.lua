@@ -101,19 +101,19 @@ local colors = {
         hygg3 = "#CDF6F3"
     },
     blue = {
-        base = "#003a85",
-        bright = "#5282a6",
-        soft = "#6ba6cf",
-        dim = "#2f4e6a",
+        base = "#3082d3",
+        bright = "#4967a3",
+        soft = "#aaD4ff",
+        dim = "#234ddd",
         luminous = "#003a85",
         phantom = "#364e7b",
         abyss = "#00216d"
     },
     cyan = {
-        base = "#006056",
+        base = "#249690",
         bright = "#7BBEBD",
         soft = "#A2E1E0",
-        dim = "#468483",
+        dim = "#006056",
         glacier = "#008775",
         oceanic = "#007067",
         celestial = "#006056"
