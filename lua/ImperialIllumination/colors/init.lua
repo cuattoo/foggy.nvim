@@ -104,7 +104,7 @@ function C.extend_palette(style)
         C.bg_visual = C.bg_highlight
     end
 
-    if O.background != nil then
+    if O.background not nil then
 	    C.bg = 0.background
     end
 end
