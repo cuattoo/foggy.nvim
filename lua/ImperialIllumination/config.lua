@@ -6,6 +6,8 @@ local defaults = {
         return palette
     end,
 
+    background = nil,
+
     -- Override terminal bg
     terminal = {
         terminal = "kitty",

@@ -103,6 +103,10 @@ function C.extend_palette(style)
         C.bg_highlight = U.blend(C.gray.dull2, C.bg, O.cursorline.blend)
         C.bg_visual = C.bg_highlight
     end
+
+    if O.background != nil then
+	    C.bg = 0.background
+    end
 end
 
 -- Sometimes the palette is required before the theme has been loaded,
