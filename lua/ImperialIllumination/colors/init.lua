@@ -105,7 +105,7 @@ function C.extend_palette(style)
     end
 
     if O.background not nil then
-	    C.bg = 0.background
+	    C.bg = O.background
     end
 end
 
