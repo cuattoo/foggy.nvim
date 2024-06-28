@@ -43,7 +43,7 @@ local defaults = {
         theme = 'dark',
         -- Blending the cursorline bg with the buffer bg.
         blend = 0.6,
-	visual_blend = 0.8,
+	visual_blend = 0.4,
     },
     noice = {
         -- Available styles: `classic`, `flat`.
