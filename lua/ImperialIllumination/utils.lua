@@ -128,11 +128,11 @@ function M.blend(foreground, background, alpha)
     return M.rgb_to_hex(blend_channel(fg[1], bg[1]), blend_channel(fg[2], bg[2]), blend_channel(fg[3], bg[3]))
 end
 
--- Function to create a color with opacity and return as hex
+-- Function to convert hex color with opacity to RGBA format
 -- Input: hexColor (string) - Hex color value (e.g., "#RRGGBB")
 --        opacity (number) - Opacity value between 0 and 1
--- Output: string - modified hex color value with opacity
-function M.opacity(hexColor, opacity)
+-- Output: string - RGBA color value with opacity
+function hexToRgba(hexColor, opacity)
     -- Remove leading "#" if present
     hexColor = hexColor:gsub("#", "")
     
@@ -141,17 +141,16 @@ function M.opacity(hexColor, opacity)
     local g = tonumber(hexColor:sub(3, 4), 16)
     local b = tonumber(hexColor:sub(5, 6), 16)
     
+    -- Ensure opacity is within valid range (0-1)
+    opacity = math.max(0, math.min(1, opacity))
+    
     -- Calculate alpha value based on opacity
     local a = opacity * 255
     
-    -- Ensure alpha is within valid range (0-255)
-    a = math.floor(a)
-    a = math.max(0, math.min(255, a))
+    -- Format RGB and alpha into an RGBA color value
+    local rgba = string.format("rgba(%d, %d, %d, %.2f)", r, g, b, opacity)
     
-    -- Format RGB and alpha into a hex color value
-    local rgba = string.format("#%02X%02X%02X%02X", r, g, b, a)
-    
-    -- Return the modified hex color value
+    -- Return the RGBA color value
     return rgba
 end
 
