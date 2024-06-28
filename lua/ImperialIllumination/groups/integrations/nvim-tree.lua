@@ -13,7 +13,7 @@ return {
 
     NvimTreeSpecialFile = { link = 'NvimTreeFolderName' },
 
-    NvimTreeRootFolder = { fg = C.gray.gy0 },
+    NvimTreeRootFolder = { fg = C.fg_highlight },
     NvimTreeGitDirty = { fg = C.git.change },
     NvimTreeGitNew = { fg = C.git.add },
     NvimTreeGitDeleted = { fg = C.git.delete },
@@ -23,8 +23,8 @@ return {
 
     NvimTreeWinSeparator = { fg = C.bg_dark, bg = C.bg },
 
-    NvimTreeCursorLine = { bg = C.bg_highlight },
-    NvimTreeCursor = { bg = C.none, fg = C.none },
+    NvimTreeCursorLine = { link = 'CursorColumn' },
+    NvimTreeCursor = { link = 'Cursor' },
 
     NvimTreeSymlink = { fg = C.fg_bright },
 }

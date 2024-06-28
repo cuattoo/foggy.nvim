@@ -3,7 +3,7 @@ local C = require 'ImperialIllumination.colors'
 return {
 
     terminal_color_0 = C.black.darker,
-    terminal_color_8 = C.gray.dull2,
+    terminal_color_8 = C.white.darker,
 
     terminal_color_1 = C.red.base,
     terminal_color_9 = C.red.bright,

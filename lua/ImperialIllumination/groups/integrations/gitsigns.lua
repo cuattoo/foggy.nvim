@@ -1,5 +1,4 @@
 local C = require 'ImperialIllumination.colors'
-local O = require('ImperialIllumination.config').options
 
 return {
     GitSignsAdd = { fg = C.git.add, bg = C.bg_sidebar },
