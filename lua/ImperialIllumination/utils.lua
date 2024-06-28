@@ -132,7 +132,7 @@ end
 -- Input: hexColor (string) - Hex color value (e.g., "#RRGGBB")
 --        opacity (number) - Opacity value between 0 and 1
 -- Output: string - RGBA color value with opacity
-function hexToRgba(hexColor, opacity)
+function M.opacity(hexColor, opacity)
     -- Remove leading "#" if present
     hexColor = hexColor:gsub("#", "")
     
