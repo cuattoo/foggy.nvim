@@ -30,13 +30,13 @@ function C.extend_palette(style)
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = C.bg
-    C.bg_popup = C.gray.dust0
+    C.bg_popup = C.black.lighter
     C.bg_statusline = C.bg_dark
-    C.bg_selected = U.blend(C.gray.dull1, C.black.dark, 0.4)
+    C.bg_selected = C.white.medium
     C.bg_fold = C.gray.dull2
 
     -- Borders
-    C.border_fg = C.bg_highlight
+    C.border_fg = C.gray.g1
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
@@ -107,6 +107,7 @@ function C.extend_palette(style)
     if O.background ~= nil then
 	    C.bg = O.background
     end
+    print(0.background)
 end
 
 -- Sometimes the palette is required before the theme has been loaded,
