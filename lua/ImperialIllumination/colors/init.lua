@@ -107,7 +107,6 @@ function C.extend_palette(style)
     if O.background ~= nil then
 	    C.bg = O.background
     end
-    print(0.background)
 end
 
 -- Sometimes the palette is required before the theme has been loaded,
