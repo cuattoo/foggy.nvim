@@ -83,7 +83,7 @@ local groups = {
 
     Title = { fg = C.fg_bright, bold = true },                -- titles for output from ":set all", ":autocmd" etc.
 
-    Visual = { bg = U.blend(C.bg, bg.highlight, O.cursorline.visual_blend), bold = O.cursorline.bold },  -- Visual mode selection
+    Visual = { bg = U.blend(C.bg, C.bg_highlight, O.cursorline.visual_blend), bold = O.cursorline.bold },  -- Visual mode selection
     VisualNOS = { bg = C.bg_visual },                         -- Visual mode selection when vim is "Not Owning the Selection".
 
     WarningMsg = { fg = C.warning },                          -- warning messages
