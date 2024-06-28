@@ -98,7 +98,9 @@ require 'ImperialIllumination' .setup {
         -- Avialable styles: 'dark', 'light'.
         theme = 'light',
         -- Blending the cursorline bg with the buffer bg.
-        blend = 0.85,
+        blend = 0.6,
+        -- Visual blend
+        vblend = 0.8,
     },
     noice = {
         -- Available styles: `classic`, `flat`.

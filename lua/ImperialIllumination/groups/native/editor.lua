@@ -12,7 +12,7 @@ local groups = {
     Cursor = { fg = C.bg, bg = C.fg },                                        -- character under the cursor
     lCursor = { fg = C.bg },                                                  -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { fg = C.fg },                                                 -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn = { bg = U.blend(C.bg,C.bg_highlight, 0.4) },                                   -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorColumn = { bg = U.blend(C.bg,C.bg_highlight, O.cursorline.blend) },                                   -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { bg = C.bg_inactive, bold = O.cursorline.bold },            -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorLineNr = { fg = C.fg_hightlight, bold = O.cursorline.bold_number }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineSign = {},
@@ -83,7 +83,7 @@ local groups = {
 
     Title = { fg = C.fg_bright, bold = true },                -- titles for output from ":set all", ":autocmd" etc.
 
-    Visual = { bg = C.bg_visual, bold = O.cursorline.bold },  -- Visual mode selection
+    Visual = { bg = U.blend(C.bg, bg.highlight, O.cursorline.vblend), bold = O.cursorline.bold },  -- Visual mode selection
     VisualNOS = { bg = C.bg_visual },                         -- Visual mode selection when vim is "Not Owning the Selection".
 
     WarningMsg = { fg = C.warning },                          -- warning messages
