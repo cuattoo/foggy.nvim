@@ -52,13 +52,13 @@ function C.extend_palette(style)
     C.bg_popup = C.black.lighter
     C.fg_popup = C.white.darkter
     C.bg_popup_border = C.bg_popup
-    C.fg_popup_border = C.border_fg
+    C.fg_popup_border = C.fg_popup
 
     -- Floating windows
     C.bg_float = C.bg_popup
     C.fg_float = C.fg_popup
     C.bg_float_border = C.bg_popup_border
-    C.fg_float_border = C.border_fg
+    C.fg_float_border = C.fg_popup_border
 
 
     -- Diffs
