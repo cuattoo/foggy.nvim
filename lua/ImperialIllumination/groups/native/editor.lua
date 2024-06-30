@@ -50,8 +50,6 @@ local groups = {
     Normal = { fg = C.fg, bg = C.bg },                                   -- normal text
     NormalNC = { fg = C.fg, bg = C.bg },                                 -- normal text in non-current windows
     NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar },                 -- normal text in sidebar
-    -- Custom
-    NormalBorder =  { fg = C.fg_border, bg = C.bg_border },
 
     NormalFloat = { fg = C.fg_float, bg = C.bg_float },                  -- Normal text in floating windows.
     FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border },
