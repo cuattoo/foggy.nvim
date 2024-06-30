@@ -30,7 +30,6 @@ function C.extend_palette(style)
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = C.bg
-    C.bg_popup = C.black.lighter
     C.bg_statusline = C.bg_dark
     C.bg_selected = C.white.medium
     C.bg_fold = C.gray.dull2
@@ -40,7 +39,7 @@ function C.extend_palette(style)
     C.border_bg = C.bg_pupup
 
     -- Foregrounds
-    C.fg = C.white.darkest
+    C.fg = C.white.medium
     C.fg_inactive = C.gray.dull1
     C.fg_hightlight = C.white.medium
     C.fg_bright = C.gray.hl2
@@ -50,14 +49,14 @@ function C.extend_palette(style)
     C.fg_selected = C.fg_bright
 
     -- Popups
-    C.bg_popup = C.bg
-    C.fg_popup = C.fg
-    C.bg_popup_border = C.bg
+    C.bg_popup = C.black.lighter
+    C.fg_popup = C.white.darkter
+    C.bg_popup_border = C.bg_popup
     C.fg_popup_border = C.border_fg
 
     -- Floating windows
     C.bg_float = C.bg_popup
-    C.fg_float = C.fg
+    C.fg_float = C.fg_popup
     C.bg_float_border = C.bg_popup_border
     C.fg_float_border = C.border_fg
 
@@ -67,13 +66,13 @@ function C.extend_palette(style)
         change0 = U.blend(C.white.normal, C.bg, 0.05),
         change1 = U.blend(C.white.dark, C.bg, diff_blend),
         add = U.blend(C.green.base, C.bg, diff_blend),
-        delete = U.blend(C.red.soft, C.bg, diff_blend),
+        delete = U.blend(C.red.base, C.bg, diff_blend),
     }
 
     -- Git
     C.git = {
         add = C.green.base,
-        delete = C.red.soft,
+        delete = C.red.base,
         change = C.yellow.base,
     }
 
@@ -81,7 +80,7 @@ function C.extend_palette(style)
     C.error = C.red.soft
     C.warn = C.yellow.base
     C.warning = C.warn
-    C.hint = C.green.bright
+    C.hint = C.green.base
     C.info = C.blue.base
 
     if O.transparent_bg then
