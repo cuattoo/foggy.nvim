@@ -28,7 +28,7 @@ local defaults = {
     -- Enable brighter float border.
     bright_border = false,
     -- Adjusts some colors to make the theme a bit nicer (imo).
-    reduced_blue = true,
+    reduced_blue = false,
     -- Swop the dark background with the normal one.
     swap_backgrounds = false,
     -- Override the styling of any highlight group.
