@@ -25,8 +25,8 @@ function C.extend_palette(style)
 
     -- Backgrounds
     C.bg = C.black.medium
-    C.bg_dark = C.black.darker
-    C.bg_inactive = C.black.normal
+    C.bg_dark = C.black.darkest
+    C.bg_inactive = C.black.darker
     C.bg_highlight = C.gray.g1
     C.bg_visual = C.bg_highlight
     C.bg_sidebar = C.bg
@@ -36,7 +36,7 @@ function C.extend_palette(style)
 
     -- Foregrounds
     C.fg = C.white.medium
-    C.fg_inactive = C.gray.dull1
+    C.fg_inactive = C.white.darker
     C.fg_hightlight = C.white.medium
     C.fg_bright = C.gray.hl2
     C.fg_dark = C.black.normal
