@@ -34,10 +34,6 @@ function C.extend_palette(style)
     C.bg_selected = C.white.medium
     C.bg_fold = C.gray.dull2
 
-    -- Borders
-    C.border_fg = C.gray.g1
-    C.border_bg = C.bg_pupup
-
     -- Foregrounds
     C.fg = C.white.medium
     C.fg_inactive = C.gray.dull1

@@ -26,8 +26,8 @@ local groups = {
 
     ErrorMsg = { fg = C.error },                                         -- error messages on the command line
 
-    VertSplit = { fg = C.border_fg },                                    -- the column separating vertically split windows
-    WinSeparator = { fg = C.border_fg, bg = C.border_bg },               -- the column separating vertically split windows
+    VertSplit = { fg = C.fg_border },                                    -- the column separating vertically split windows
+    WinSeparator = { fg = C.fg_border, bg = C.bg_border },               -- the column separating vertically split windows
 
     Folded = { fg = C.fg_fold, bg = C.bg_fold },                         -- line used for closed folds
     FoldColumn = { bg = C.bg_fold, fg = C.fg_fold },                     -- 'foldcolumn'
@@ -50,6 +50,8 @@ local groups = {
     Normal = { fg = C.fg, bg = C.bg },                                   -- normal text
     NormalNC = { fg = C.fg, bg = C.bg },                                 -- normal text in non-current windows
     NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar },                 -- normal text in sidebar
+    -- Custom
+    NormalBorder =  { fg = C.fg_border, bg = C.bg_border },
 
     NormalFloat = { fg = C.fg_float, bg = C.bg_float },                  -- Normal text in floating windows.
     FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border },

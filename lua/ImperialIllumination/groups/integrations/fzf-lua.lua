@@ -1,11 +1,11 @@
 local C = require 'ImperialIllumination.colors'
 return {
 	    -- FzfLua
-    FzfLuaBorder = { fg = C.border_fg, bg = C.border_bg },
+    FzfLuaBorder = { fg = C.fg_border, bg = C.bg_border },
     FzfLuaNormal = { fg = C.fg, bg = C.bg_float },
     FzfLuaFzfNormal = { fg = C.fg },
-    FzfLuaTitle = { fg = C.orange.base, bg = C.float_bg },
-    FzfLuaPreviewTitle = { fg = C.border_bg, bg = C.border_bg },
+    FzfLuaTitle = { fg = C.orange.base, bg = C.bg_float },
+    FzfLuaPreviewTitle = { fg = C.fg_border, bg = C.bg_border },
     FzfLuaFilePart = { link = "FzfLuaFzfNormal" },
     FzfLuaDirPart = { fg = C.fg },
     FzfLuaCursor = { link = "IncSearch" },
